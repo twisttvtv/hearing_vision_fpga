@@ -1,0 +1,534 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Tue Nov  3 15:27:45 2026
+| Host         : twisttv running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file camera_wrapper_bus_skew_routed.rpt -pb camera_wrapper_bus_skew_routed.pb -rpx camera_wrapper_bus_skew_routed.rpx
+| Design       : camera_wrapper
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+Table of Contents
+-----------------
+1. Bus Skew Report Summary
+2. Bus Skew Report Per Constraint
+
+1. Bus Skew Report Summary
+--------------------------
+
+Id  Position  From                            To                              Corner  Requirement(ns)  Actual(ns)  Slack(ns)
+--  --------  ------------------------------  ------------------------------  ------  ---------------  ----------  ---------
+1   9         [get_cells -of_objects [get_pins -of_objects [get_nets -of_objects [get_pins -of_objects [get_cells -hier -regexp {.*u_sync/gray_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}] -filter {REF_PIN_NAME == D}]] -filter {DIRECTION == OUT}] -filter {IS_SEQUENTIAL == 1}]
+                                              [get_cells -hier -regexp {.*u_sync/gray_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}]
+                                                                              Slow             10.000       1.240      8.760
+2   11        [get_cells -of_objects [get_pins -of_objects [get_nets -of_objects [get_pins -of_objects [get_cells -hier -regexp {.*u_video_buffer/read_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}] -filter {REF_PIN_NAME == D}]] -filter {DIRECTION == OUT}] -filter {IS_SEQUENTIAL == 1}]
+                                              [get_cells -hier -regexp {.*u_video_buffer/read_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}]
+                                                                              Slow             10.000       0.807      9.193
+3   13        [get_cells -of_objects [get_pins -of_objects [get_nets -of_objects [get_pins -of_objects [get_cells -hier -regexp {.*u_video_buffer/write_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}] -filter {REF_PIN_NAME == D}]] -filter {DIRECTION == OUT}] -filter {IS_SEQUENTIAL == 1}]
+                                              [get_cells -hier -regexp {.*u_video_buffer/write_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}]
+                                                                              Slow             10.000       0.793      9.207
+4   15        [get_cells -of_objects [get_pins -of_objects [get_nets -of_objects [get_pins -of_objects [get_cells -hier -regexp {.*u_video_buffer/drop_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}] -filter {REF_PIN_NAME == D}]] -filter {DIRECTION == OUT}] -filter {IS_SEQUENTIAL == 1}]
+                                              [get_cells -hier -regexp {.*u_video_buffer/drop_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}]
+                                                                              Slow             10.000       1.111      8.889
+5   17        [get_cells -of_objects [get_pins -of_objects [get_nets -of_objects [get_pins -of_objects [get_cells -hier -regexp {.*u_video_buffer/error_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}] -filter {REF_PIN_NAME == D}]] -filter {DIRECTION == OUT}] -filter {IS_SEQUENTIAL == 1}]
+                                              [get_cells -hier -regexp {.*u_video_buffer/error_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}]
+                                                                              Slow             10.000       1.037      8.963
+
+
+2. Bus Skew Report Per Constraint
+---------------------------------
+
+Id: 1
+set_bus_skew -from [get_cells -of_objects [get_pins -of_objects [get_nets -of_objects [get_pins -of_objects [get_cells -hier -regexp {.*u_sync/gray_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}] -filter {REF_PIN_NAME == D}]] -filter {DIRECTION == OUT}] -filter {IS_SEQUENTIAL == 1}] -to [get_cells -hier -regexp {.*u_sync/gray_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}] 10.000
+Requirement: 10.000ns
+Endpoints: 64
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk                   cam_pclk_clk          camera_i/model_camera_top_0/inst/u_sync/gray_ff1_reg[40]/D
+                                                                            camera_i/model_camera_top_0/inst/u_sync/gray_ff1_reg[47]/D
+                                                                                                            Slow         1.240      8.760
+
+
+Slack (MET) :             8.760ns  (requirement - actual skew)
+  Endpoint Source:        camera_i/model_camera_top_0/inst/u_sync/ticks_gray_reg[40]/C
+                            (rising edge-triggered cell FDCE clocked by clk)
+  Endpoint Destination:   camera_i/model_camera_top_0/inst/u_sync/gray_ff1_reg[40]/D
+                            (rising edge-triggered cell FDCE clocked by cam_pclk_clk)
+  Reference Source:       camera_i/model_camera_top_0/inst/u_sync/ticks_gray_reg[47]/C
+                            (rising edge-triggered cell FDCE clocked by clk)
+  Reference Destination:  camera_i/model_camera_top_0/inst/u_sync/gray_ff1_reg[47]/D
+                            (rising edge-triggered cell FDCE clocked by cam_pclk_clk)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.000ns
+  Endpoint Relative Delay:    2.879ns
+  Reference Relative Delay:   0.627ns
+  Relative CRPR:              1.012ns
+  Actual Bus Skew:            1.240ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AA18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AA18                 IBUF (Prop_ibuf_I_O)         1.480     1.480 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.805     4.285    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     4.386 r  clk_IBUF_BUFG_inst/O
+                         net (fo=4756, routed)        1.743     6.129    camera_i/model_camera_top_0/inst/u_sync/clk
+    SLICE_X30Y42         FDCE                                         r  camera_i/model_camera_top_0/inst/u_sync/ticks_gray_reg[40]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X30Y42         FDCE (Prop_fdce_C_Q)         0.478     6.607 r  camera_i/model_camera_top_0/inst/u_sync/ticks_gray_reg[40]/Q
+                         net (fo=1, routed)           1.042     7.649    camera_i/model_camera_top_0/inst/u_sync/ticks_gray[40]
+    SLICE_X34Y42         FDCE                                         r  camera_i/model_camera_top_0/inst/u_sync/gray_ff1_reg[40]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock cam_pclk_clk rise edge)
+                                                      0.000     0.000 r  
+    W17                                               0.000     0.000 r  cam_pclk (IN)
+                         net (fo=0)                   0.000     0.000    cam_pclk
+    W17                  IBUF (Prop_ibuf_I_O)         1.414     1.414 r  cam_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.006     3.420    cam_pclk_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091     3.511 r  cam_pclk_IBUF_BUFG_inst/O
+                         net (fo=770, routed)         1.492     5.003    camera_i/model_camera_top_0/inst/u_sync/cam_pclk
+    SLICE_X34Y42         FDCE                                         r  camera_i/model_camera_top_0/inst/u_sync/gray_ff1_reg[40]/C
+                         clock pessimism              0.000     5.003    
+    SLICE_X34Y42         FDCE (Setup_fdce_C_D)       -0.233     4.770    camera_i/model_camera_top_0/inst/u_sync/gray_ff1_reg[40]
+  -------------------------------------------------------------------
+                         data arrival                           7.649    
+                         clock arrival                          4.770    
+  -------------------------------------------------------------------
+                         relative delay                         2.879    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AA18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AA18                 IBUF (Prop_ibuf_I_O)         1.410     1.410 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.418     3.828    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     3.919 r  clk_IBUF_BUFG_inst/O
+                         net (fo=4756, routed)        1.568     5.487    camera_i/model_camera_top_0/inst/u_sync/clk
+    SLICE_X31Y44         FDCE                                         r  camera_i/model_camera_top_0/inst/u_sync/ticks_gray_reg[47]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X31Y44         FDCE (Prop_fdce_C_Q)         0.367     5.854 r  camera_i/model_camera_top_0/inst/u_sync/ticks_gray_reg[47]/Q
+                         net (fo=1, routed)           0.459     6.313    camera_i/model_camera_top_0/inst/u_sync/ticks_gray[47]
+    SLICE_X32Y44         FDCE                                         r  camera_i/model_camera_top_0/inst/u_sync/gray_ff1_reg[47]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock cam_pclk_clk rise edge)
+                                                      0.000     0.000 r  
+    W17                                               0.000     0.000 r  cam_pclk (IN)
+                         net (fo=0)                   0.000     0.000    cam_pclk
+    W17                  IBUF (Prop_ibuf_I_O)         1.484     1.484 r  cam_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.205     3.689    cam_pclk_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.101     3.790 r  cam_pclk_IBUF_BUFG_inst/O
+                         net (fo=770, routed)         1.666     5.456    camera_i/model_camera_top_0/inst/u_sync/cam_pclk
+    SLICE_X32Y44         FDCE                                         r  camera_i/model_camera_top_0/inst/u_sync/gray_ff1_reg[47]/C
+                         clock pessimism              0.000     5.456    
+    SLICE_X32Y44         FDCE (Hold_fdce_C_D)         0.230     5.686    camera_i/model_camera_top_0/inst/u_sync/gray_ff1_reg[47]
+  -------------------------------------------------------------------
+                         data arrival                           6.313    
+                         clock arrival                          5.686    
+  -------------------------------------------------------------------
+                         relative delay                         0.627    
+
+
+
+Id: 2
+set_bus_skew -from [get_cells -of_objects [get_pins -of_objects [get_nets -of_objects [get_pins -of_objects [get_cells -hier -regexp {.*u_video_buffer/read_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}] -filter {REF_PIN_NAME == D}]] -filter {DIRECTION == OUT}] -filter {IS_SEQUENTIAL == 1}] -to [get_cells -hier -regexp {.*u_video_buffer/read_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}] 10.000
+Requirement: 10.000ns
+Endpoints: 2
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+clk                   cam_pclk_clk          camera_i/model_camera_top_0/inst/u_video_buffer/read_ff1_reg[0]/D
+                                                                            camera_i/model_camera_top_0/inst/u_video_buffer/read_ff1_reg[1]/D
+                                                                                                            Slow         0.807      9.193
+
+
+Slack (MET) :             9.193ns  (requirement - actual skew)
+  Endpoint Source:        camera_i/model_camera_top_0/inst/u_video_buffer/read_gray_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by clk)
+  Endpoint Destination:   camera_i/model_camera_top_0/inst/u_video_buffer/read_ff1_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by cam_pclk_clk)
+  Reference Source:       camera_i/model_camera_top_0/inst/u_video_buffer/read_gray_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by clk)
+  Reference Destination:  camera_i/model_camera_top_0/inst/u_video_buffer/read_ff1_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by cam_pclk_clk)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.000ns
+  Endpoint Relative Delay:    2.533ns
+  Reference Relative Delay:   0.654ns
+  Relative CRPR:              1.072ns
+  Actual Bus Skew:            0.807ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AA18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AA18                 IBUF (Prop_ibuf_I_O)         1.480     1.480 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.805     4.285    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     4.386 r  clk_IBUF_BUFG_inst/O
+                         net (fo=4756, routed)        1.732     6.118    camera_i/model_camera_top_0/inst/u_video_buffer/clk
+    SLICE_X28Y30         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/read_gray_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y30         FDCE (Prop_fdce_C_Q)         0.456     6.574 r  camera_i/model_camera_top_0/inst/u_video_buffer/read_gray_reg[0]/Q
+                         net (fo=8, routed)           0.932     7.506    camera_i/model_camera_top_0/inst/u_video_buffer/read_gray[0]
+    SLICE_X29Y29         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/read_ff1_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock cam_pclk_clk rise edge)
+                                                      0.000     0.000 r  
+    W17                                               0.000     0.000 r  cam_pclk (IN)
+                         net (fo=0)                   0.000     0.000    cam_pclk
+    W17                  IBUF (Prop_ibuf_I_O)         1.414     1.414 r  cam_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.006     3.420    cam_pclk_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091     3.511 r  cam_pclk_IBUF_BUFG_inst/O
+                         net (fo=770, routed)         1.557     5.068    camera_i/model_camera_top_0/inst/u_video_buffer/cam_pclk
+    SLICE_X29Y29         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/read_ff1_reg[0]/C
+                         clock pessimism              0.000     5.068    
+    SLICE_X29Y29         FDCE (Setup_fdce_C_D)       -0.095     4.973    camera_i/model_camera_top_0/inst/u_video_buffer/read_ff1_reg[0]
+  -------------------------------------------------------------------
+                         data arrival                           7.506    
+                         clock arrival                          4.973    
+  -------------------------------------------------------------------
+                         relative delay                         2.533    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  
+    AA18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AA18                 IBUF (Prop_ibuf_I_O)         1.410     1.410 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.418     3.828    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     3.919 r  clk_IBUF_BUFG_inst/O
+                         net (fo=4756, routed)        1.557     5.476    camera_i/model_camera_top_0/inst/u_video_buffer/clk
+    SLICE_X28Y30         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/read_gray_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y30         FDCE (Prop_fdce_C_Q)         0.367     5.843 r  camera_i/model_camera_top_0/inst/u_video_buffer/read_gray_reg[1]/Q
+                         net (fo=9, routed)           0.505     6.348    camera_i/model_camera_top_0/inst/u_video_buffer/read_gray[1]
+    SLICE_X29Y32         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/read_ff1_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock cam_pclk_clk rise edge)
+                                                      0.000     0.000 r  
+    W17                                               0.000     0.000 r  cam_pclk (IN)
+                         net (fo=0)                   0.000     0.000    cam_pclk
+    W17                  IBUF (Prop_ibuf_I_O)         1.484     1.484 r  cam_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.205     3.689    cam_pclk_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.101     3.790 r  cam_pclk_IBUF_BUFG_inst/O
+                         net (fo=770, routed)         1.735     5.525    camera_i/model_camera_top_0/inst/u_video_buffer/cam_pclk
+    SLICE_X29Y32         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/read_ff1_reg[1]/C
+                         clock pessimism              0.000     5.525    
+    SLICE_X29Y32         FDCE (Hold_fdce_C_D)         0.169     5.694    camera_i/model_camera_top_0/inst/u_video_buffer/read_ff1_reg[1]
+  -------------------------------------------------------------------
+                         data arrival                           6.348    
+                         clock arrival                          5.694    
+  -------------------------------------------------------------------
+                         relative delay                         0.654    
+
+
+
+Id: 3
+set_bus_skew -from [get_cells -of_objects [get_pins -of_objects [get_nets -of_objects [get_pins -of_objects [get_cells -hier -regexp {.*u_video_buffer/write_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}] -filter {REF_PIN_NAME == D}]] -filter {DIRECTION == OUT}] -filter {IS_SEQUENTIAL == 1}] -to [get_cells -hier -regexp {.*u_video_buffer/write_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}] 10.000
+Requirement: 10.000ns
+Endpoints: 2
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+cam_pclk_clk          clk                   camera_i/model_camera_top_0/inst/u_video_buffer/write_ff1_reg[1]/D
+                                                                            camera_i/model_camera_top_0/inst/u_video_buffer/write_ff1_reg[0]/D
+                                                                                                            Slow         0.793      9.207
+
+
+Slack (MET) :             9.207ns  (requirement - actual skew)
+  Endpoint Source:        camera_i/model_camera_top_0/inst/u_video_buffer/write_ptr_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by cam_pclk_clk)
+  Endpoint Destination:   camera_i/model_camera_top_0/inst/u_video_buffer/write_ff1_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by clk)
+  Reference Source:       camera_i/model_camera_top_0/inst/u_video_buffer/write_gray_reg[0]/C
+                            (rising edge-triggered cell FDCE clocked by cam_pclk_clk)
+  Reference Destination:  camera_i/model_camera_top_0/inst/u_video_buffer/write_ff1_reg[0]/D
+                            (rising edge-triggered cell FDCE clocked by clk)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.000ns
+  Endpoint Relative Delay:    1.503ns
+  Reference Relative Delay:  -0.327ns
+  Relative CRPR:              1.037ns
+  Actual Bus Skew:            0.793ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock cam_pclk_clk rise edge)
+                                                      0.000     0.000 r  
+    W17                                               0.000     0.000 r  cam_pclk (IN)
+                         net (fo=0)                   0.000     0.000    cam_pclk
+    W17                  IBUF (Prop_ibuf_I_O)         1.484     1.484 r  cam_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.205     3.689    cam_pclk_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.101     3.790 r  cam_pclk_IBUF_BUFG_inst/O
+                         net (fo=770, routed)         1.737     5.527    camera_i/model_camera_top_0/inst/u_video_buffer/cam_pclk
+    SLICE_X27Y32         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/write_ptr_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X27Y32         FDCE (Prop_fdce_C_Q)         0.419     5.946 r  camera_i/model_camera_top_0/inst/u_video_buffer/write_ptr_reg[1]/Q
+                         net (fo=7, routed)           0.766     6.712    camera_i/model_camera_top_0/inst/u_video_buffer/write_ptr_reg_n_0_[1]
+    SLICE_X29Y30         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/write_ff1_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AA18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AA18                 IBUF (Prop_ibuf_I_O)         1.410     1.410 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.418     3.828    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     3.919 r  clk_IBUF_BUFG_inst/O
+                         net (fo=4756, routed)        1.557     5.476    camera_i/model_camera_top_0/inst/u_video_buffer/clk
+    SLICE_X29Y30         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/write_ff1_reg[1]/C
+                         clock pessimism              0.000     5.476    
+    SLICE_X29Y30         FDCE (Setup_fdce_C_D)       -0.267     5.209    camera_i/model_camera_top_0/inst/u_video_buffer/write_ff1_reg[1]
+  -------------------------------------------------------------------
+                         data arrival                           6.712    
+                         clock arrival                          5.209    
+  -------------------------------------------------------------------
+                         relative delay                         1.503    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock cam_pclk_clk rise edge)
+                                                      0.000     0.000 r  
+    W17                                               0.000     0.000 r  cam_pclk (IN)
+                         net (fo=0)                   0.000     0.000    cam_pclk
+    W17                  IBUF (Prop_ibuf_I_O)         1.414     1.414 r  cam_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.006     3.420    cam_pclk_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091     3.511 r  cam_pclk_IBUF_BUFG_inst/O
+                         net (fo=770, routed)         1.561     5.072    camera_i/model_camera_top_0/inst/u_video_buffer/cam_pclk
+    SLICE_X27Y32         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/write_gray_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X27Y32         FDCE (Prop_fdce_C_Q)         0.367     5.439 r  camera_i/model_camera_top_0/inst/u_video_buffer/write_gray_reg[0]/Q
+                         net (fo=2, routed)           0.523     5.962    camera_i/model_camera_top_0/inst/u_video_buffer/write_gray[0]
+    SLICE_X27Y30         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/write_ff1_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AA18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AA18                 IBUF (Prop_ibuf_I_O)         1.480     1.480 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.805     4.285    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     4.386 r  clk_IBUF_BUFG_inst/O
+                         net (fo=4756, routed)        1.734     6.120    camera_i/model_camera_top_0/inst/u_video_buffer/clk
+    SLICE_X27Y30         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/write_ff1_reg[0]/C
+                         clock pessimism              0.000     6.120    
+    SLICE_X27Y30         FDCE (Hold_fdce_C_D)         0.169     6.289    camera_i/model_camera_top_0/inst/u_video_buffer/write_ff1_reg[0]
+  -------------------------------------------------------------------
+                         data arrival                           5.962    
+                         clock arrival                          6.289    
+  -------------------------------------------------------------------
+                         relative delay                        -0.327    
+
+
+
+Id: 4
+set_bus_skew -from [get_cells -of_objects [get_pins -of_objects [get_nets -of_objects [get_pins -of_objects [get_cells -hier -regexp {.*u_video_buffer/drop_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}] -filter {REF_PIN_NAME == D}]] -filter {DIRECTION == OUT}] -filter {IS_SEQUENTIAL == 1}] -to [get_cells -hier -regexp {.*u_video_buffer/drop_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}] 10.000
+Requirement: 10.000ns
+Endpoints: 32
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+cam_pclk_clk          clk                   camera_i/model_camera_top_0/inst/u_video_buffer/drop_ff1_reg[9]/D
+                                                                            camera_i/model_camera_top_0/inst/u_video_buffer/drop_ff1_reg[17]/D
+                                                                                                            Slow         1.111      8.889
+
+
+Slack (MET) :             8.889ns  (requirement - actual skew)
+  Endpoint Source:        camera_i/model_camera_top_0/inst/u_video_buffer/drop_gray_reg[9]/C
+                            (rising edge-triggered cell FDCE clocked by cam_pclk_clk)
+  Endpoint Destination:   camera_i/model_camera_top_0/inst/u_video_buffer/drop_ff1_reg[9]/D
+                            (rising edge-triggered cell FDCE clocked by clk)
+  Reference Source:       camera_i/model_camera_top_0/inst/u_video_buffer/drop_gray_reg[17]/C
+                            (rising edge-triggered cell FDCE clocked by cam_pclk_clk)
+  Reference Destination:  camera_i/model_camera_top_0/inst/u_video_buffer/drop_ff1_reg[17]/D
+                            (rising edge-triggered cell FDCE clocked by clk)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.000ns
+  Endpoint Relative Delay:    1.693ns
+  Reference Relative Delay:  -0.395ns
+  Relative CRPR:              0.976ns
+  Actual Bus Skew:            1.111ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock cam_pclk_clk rise edge)
+                                                      0.000     0.000 r  
+    W17                                               0.000     0.000 r  cam_pclk (IN)
+                         net (fo=0)                   0.000     0.000    cam_pclk
+    W17                  IBUF (Prop_ibuf_I_O)         1.484     1.484 r  cam_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.205     3.689    cam_pclk_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.101     3.790 r  cam_pclk_IBUF_BUFG_inst/O
+                         net (fo=770, routed)         1.659     5.449    camera_i/model_camera_top_0/inst/u_video_buffer/cam_pclk
+    SLICE_X32Y34         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/drop_gray_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y34         FDCE (Prop_fdce_C_Q)         0.478     5.927 r  camera_i/model_camera_top_0/inst/u_video_buffer/drop_gray_reg[9]/Q
+                         net (fo=1, routed)           0.907     6.834    camera_i/model_camera_top_0/inst/u_video_buffer/drop_gray[9]
+    SLICE_X33Y34         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/drop_ff1_reg[9]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AA18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AA18                 IBUF (Prop_ibuf_I_O)         1.410     1.410 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.418     3.828    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     3.919 r  clk_IBUF_BUFG_inst/O
+                         net (fo=4756, routed)        1.486     5.405    camera_i/model_camera_top_0/inst/u_video_buffer/clk
+    SLICE_X33Y34         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/drop_ff1_reg[9]/C
+                         clock pessimism              0.000     5.405    
+    SLICE_X33Y34         FDCE (Setup_fdce_C_D)       -0.264     5.141    camera_i/model_camera_top_0/inst/u_video_buffer/drop_ff1_reg[9]
+  -------------------------------------------------------------------
+                         data arrival                           6.834    
+                         clock arrival                          5.141    
+  -------------------------------------------------------------------
+                         relative delay                         1.693    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock cam_pclk_clk rise edge)
+                                                      0.000     0.000 r  
+    W17                                               0.000     0.000 r  cam_pclk (IN)
+                         net (fo=0)                   0.000     0.000    cam_pclk
+    W17                  IBUF (Prop_ibuf_I_O)         1.414     1.414 r  cam_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.006     3.420    cam_pclk_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091     3.511 r  cam_pclk_IBUF_BUFG_inst/O
+                         net (fo=770, routed)         1.490     5.001    camera_i/model_camera_top_0/inst/u_video_buffer/cam_pclk
+    SLICE_X34Y38         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/drop_gray_reg[17]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X34Y38         FDCE (Prop_fdce_C_Q)         0.418     5.419 r  camera_i/model_camera_top_0/inst/u_video_buffer/drop_gray_reg[17]/Q
+                         net (fo=1, routed)           0.404     5.823    camera_i/model_camera_top_0/inst/u_video_buffer/drop_gray[17]
+    SLICE_X35Y38         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/drop_ff1_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AA18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AA18                 IBUF (Prop_ibuf_I_O)         1.480     1.480 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.805     4.285    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     4.386 r  clk_IBUF_BUFG_inst/O
+                         net (fo=4756, routed)        1.663     6.049    camera_i/model_camera_top_0/inst/u_video_buffer/clk
+    SLICE_X35Y38         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/drop_ff1_reg[17]/C
+                         clock pessimism              0.000     6.049    
+    SLICE_X35Y38         FDCE (Hold_fdce_C_D)         0.169     6.218    camera_i/model_camera_top_0/inst/u_video_buffer/drop_ff1_reg[17]
+  -------------------------------------------------------------------
+                         data arrival                           5.823    
+                         clock arrival                          6.218    
+  -------------------------------------------------------------------
+                         relative delay                        -0.395    
+
+
+
+Id: 5
+set_bus_skew -from [get_cells -of_objects [get_pins -of_objects [get_nets -of_objects [get_pins -of_objects [get_cells -hier -regexp {.*u_video_buffer/error_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}] -filter {REF_PIN_NAME == D}]] -filter {DIRECTION == OUT}] -filter {IS_SEQUENTIAL == 1}] -to [get_cells -hier -regexp {.*u_video_buffer/error_ff1_reg\[[0-9]+\]$} -filter {IS_SEQUENTIAL == 1}] 10.000
+Requirement: 10.000ns
+Endpoints: 32
+
+From Clock            To Clock              Endpoint Pin                    Reference Pin                   Corner  Actual(ns)  Slack(ns)
+--------------------  --------------------  ------------------------------  ------------------------------  ------  ----------  ---------
+cam_pclk_clk          clk                   camera_i/model_camera_top_0/inst/u_video_buffer/error_ff1_reg[4]/D
+                                                                            camera_i/model_camera_top_0/inst/u_video_buffer/error_ff1_reg[7]/D
+                                                                                                            Slow         1.037      8.963
+
+
+Slack (MET) :             8.963ns  (requirement - actual skew)
+  Endpoint Source:        camera_i/model_camera_top_0/inst/u_video_buffer/error_gray_reg[4]/C
+                            (rising edge-triggered cell FDCE clocked by cam_pclk_clk)
+  Endpoint Destination:   camera_i/model_camera_top_0/inst/u_video_buffer/error_ff1_reg[4]/D
+                            (rising edge-triggered cell FDCE clocked by clk)
+  Reference Source:       camera_i/model_camera_top_0/inst/u_video_buffer/error_gray_reg[7]/C
+                            (rising edge-triggered cell FDCE clocked by cam_pclk_clk)
+  Reference Destination:  camera_i/model_camera_top_0/inst/u_video_buffer/error_ff1_reg[7]/D
+                            (rising edge-triggered cell FDCE clocked by clk)
+  Path Type:              Bus Skew (Max at Slow Process Corner)
+  Requirement:            10.000ns
+  Endpoint Relative Delay:    1.571ns
+  Reference Relative Delay:  -0.442ns
+  Relative CRPR:              0.976ns
+  Actual Bus Skew:            1.037ns  (Endpoint Relative Delay - Reference Relative Delay - Relative CRPR)
+
+Endpoint path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock cam_pclk_clk rise edge)
+                                                      0.000     0.000 r  
+    W17                                               0.000     0.000 r  cam_pclk (IN)
+                         net (fo=0)                   0.000     0.000    cam_pclk
+    W17                  IBUF (Prop_ibuf_I_O)         1.484     1.484 r  cam_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.205     3.689    cam_pclk_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.101     3.790 r  cam_pclk_IBUF_BUFG_inst/O
+                         net (fo=770, routed)         1.661     5.451    camera_i/model_camera_top_0/inst/u_video_buffer/cam_pclk
+    SLICE_X47Y37         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/error_gray_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y37         FDCE (Prop_fdce_C_Q)         0.419     5.870 r  camera_i/model_camera_top_0/inst/u_video_buffer/error_gray_reg[4]/Q
+                         net (fo=1, routed)           0.892     6.762    camera_i/model_camera_top_0/inst/u_video_buffer/error_gray[4]
+    SLICE_X46Y37         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/error_ff1_reg[4]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AA18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AA18                 IBUF (Prop_ibuf_I_O)         1.410     1.410 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.418     3.828    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     3.919 r  clk_IBUF_BUFG_inst/O
+                         net (fo=4756, routed)        1.487     5.406    camera_i/model_camera_top_0/inst/u_video_buffer/clk
+    SLICE_X46Y37         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/error_ff1_reg[4]/C
+                         clock pessimism              0.000     5.406    
+    SLICE_X46Y37         FDCE (Setup_fdce_C_D)       -0.215     5.191    camera_i/model_camera_top_0/inst/u_video_buffer/error_ff1_reg[4]
+  -------------------------------------------------------------------
+                         data arrival                           6.762    
+                         clock arrival                          5.191    
+  -------------------------------------------------------------------
+                         relative delay                         1.571    
+
+Reference path:
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock cam_pclk_clk rise edge)
+                                                      0.000     0.000 r  
+    W17                                               0.000     0.000 r  cam_pclk (IN)
+                         net (fo=0)                   0.000     0.000    cam_pclk
+    W17                  IBUF (Prop_ibuf_I_O)         1.414     1.414 r  cam_pclk_IBUF_inst/O
+                         net (fo=1, routed)           2.006     3.420    cam_pclk_IBUF
+    BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091     3.511 r  cam_pclk_IBUF_BUFG_inst/O
+                         net (fo=770, routed)         1.487     4.998    camera_i/model_camera_top_0/inst/u_video_buffer/cam_pclk
+    SLICE_X49Y38         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/error_gray_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y38         FDCE (Prop_fdce_C_Q)         0.367     5.365 r  camera_i/model_camera_top_0/inst/u_video_buffer/error_gray_reg[7]/Q
+                         net (fo=1, routed)           0.410     5.775    camera_i/model_camera_top_0/inst/u_video_buffer/error_gray[7]
+    SLICE_X48Y38         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/error_ff1_reg[7]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)        0.000     0.000 r  
+    AA18                                              0.000     0.000 r  clk (IN)
+                         net (fo=0)                   0.000     0.000    clk
+    AA18                 IBUF (Prop_ibuf_I_O)         1.480     1.480 r  clk_IBUF_inst/O
+                         net (fo=1, routed)           2.805     4.285    clk_IBUF
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     4.386 r  clk_IBUF_BUFG_inst/O
+                         net (fo=4756, routed)        1.661     6.047    camera_i/model_camera_top_0/inst/u_video_buffer/clk
+    SLICE_X48Y38         FDCE                                         r  camera_i/model_camera_top_0/inst/u_video_buffer/error_ff1_reg[7]/C
+                         clock pessimism              0.000     6.047    
+    SLICE_X48Y38         FDCE (Hold_fdce_C_D)         0.170     6.217    camera_i/model_camera_top_0/inst/u_video_buffer/error_ff1_reg[7]
+  -------------------------------------------------------------------
+                         data arrival                           5.775    
+                         clock arrival                          6.217    
+  -------------------------------------------------------------------
+                         relative delay                        -0.442    
+
+
+

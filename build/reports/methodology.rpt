@@ -1,0 +1,1427 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Tue Nov  3 15:27:40 2026
+| Host         : twisttv running 64-bit major release  (build 9200)
+| Command      : report_methodology -file camera_wrapper_methodology_drc_routed.rpt -pb camera_wrapper_methodology_drc_routed.pb -rpx camera_wrapper_methodology_drc_routed.rpx
+| Design       : camera_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 278
++-----------+----------+----------------------------------+--------+
+| Rule      | Severity | Description                      | Checks |
++-----------+----------+----------------------------------+--------+
+| DPIR-1    | Warning  | Asynchronous driver check        | 247    |
+| HPDR-1    | Warning  | Port pin direction inconsistency | 2      |
+| TIMING-18 | Warning  | Missing input or output delay    | 29     |
++-----------+----------+----------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+DPIR-1#1 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#2 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#3 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#4 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#5 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#6 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#7 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#8 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#9 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#10 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[18] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#11 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[19] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#12 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#13 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[20] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#14 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[21] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#15 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[22] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#16 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[23] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#17 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[24] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#18 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[25] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#19 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[26] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#20 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[27] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#21 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[28] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#22 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[29] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#23 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#24 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#25 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#26 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#27 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#28 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#29 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#30 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#31 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#32 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#33 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#34 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#35 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#36 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#37 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#38 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#39 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#40 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[18] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#41 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[19] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#42 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#43 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[20] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#44 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[21] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#45 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[22] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#46 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[23] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#47 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[24] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#48 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#49 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#50 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#51 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#52 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#53 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#54 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#55 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/D[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#56 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#57 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#58 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#59 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#60 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#61 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#62 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#63 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#64 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#65 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[18] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#66 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[19] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#67 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#68 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[20] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#69 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[21] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#70 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[22] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#71 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[23] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#72 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[24] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#73 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[25] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#74 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[26] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#75 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[27] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#76 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[28] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#77 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[29] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#78 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#79 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#80 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#81 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#82 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#83 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#84 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#85 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#86 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#87 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#88 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#89 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#90 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#91 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#92 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#93 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#94 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/B[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#95 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#96 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#97 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#98 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#99 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#100 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#101 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#102 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#103 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#104 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#105 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#106 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#107 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#108 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#109 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#110 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#111 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#112 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#113 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[18] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#114 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[19] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#115 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#116 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[20] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#117 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[21] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#118 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[22] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#119 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[23] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#120 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[24] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#121 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[25] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#122 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[26] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#123 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[27] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#124 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[28] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#125 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[29] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#126 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#127 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#128 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#129 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#130 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#131 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#132 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#133 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#134 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#135 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#136 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#137 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#138 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#139 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#140 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#141 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#142 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/B[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#143 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#144 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#145 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#146 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#147 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#148 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#149 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#150 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#151 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#152 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#153 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#154 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#155 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#156 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#157 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#158 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#159 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#160 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#161 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[18] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#162 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[19] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#163 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#164 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[20] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#165 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[21] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#166 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[22] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#167 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[23] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#168 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[24] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#169 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[25] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#170 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[26] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#171 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[27] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#172 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[28] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#173 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[29] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#174 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#175 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#176 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#177 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#178 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#179 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#180 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#181 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#182 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#183 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#184 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#185 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#186 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#187 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#188 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#189 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#190 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/B[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#191 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#192 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#193 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#194 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#195 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#196 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#197 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#198 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#199 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#200 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#201 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#202 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#203 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#204 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#205 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#206 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#207 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#208 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#209 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[18] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#210 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[19] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#211 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#212 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[20] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#213 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[21] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#214 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[22] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#215 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[23] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#216 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[24] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#217 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[25] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#218 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[26] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#219 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[27] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#220 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[28] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#221 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[29] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#222 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#223 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#224 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#225 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#226 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#227 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#228 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#229 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#230 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/B[0] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#231 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/B[10] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#232 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/B[11] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#233 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/B[12] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#234 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/B[13] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#235 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/B[14] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#236 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/B[15] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#237 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/B[16] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#238 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/B[17] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#239 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/B[1] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#240 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/B[2] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#241 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/B[3] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#242 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/B[4] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#243 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/B[5] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#244 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/B[6] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#245 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/B[7] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#246 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/B[8] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+DPIR-1#247 Warning
+Asynchronous driver check  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/B[9] is connected to registers with an asynchronous reset. This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+Related violations: <none>
+
+HPDR-1#1 Warning
+Port pin direction inconsistency  
+Hierarchical port(pin) cam_scl direction INOUT is not consistent with the directions of the cell pins/ports found at that level of the netlist hierarchy. Please review the design and consider changing the port(pin) direction. Both drivers and loads were expected for the net (cam_scl) connected to this Port, but both were not found.
+Related violations: <none>
+
+HPDR-1#2 Warning
+Port pin direction inconsistency  
+Hierarchical port(pin) cam_sda direction INOUT is not consistent with the directions of the cell pins/ports found at that level of the netlist hierarchy. Please review the design and consider changing the port(pin) direction. Both drivers and loads were expected for the net (cam_sda) connected to this Port, but both were not found.
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on cam_data[0] relative to the rising and/or falling clock edge(s) of cam_pclk_clk.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on cam_data[1] relative to the rising and/or falling clock edge(s) of cam_pclk_clk.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on cam_data[2] relative to the rising and/or falling clock edge(s) of cam_pclk_clk.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on cam_data[3] relative to the rising and/or falling clock edge(s) of cam_pclk_clk.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on cam_data[4] relative to the rising and/or falling clock edge(s) of cam_pclk_clk.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on cam_data[5] relative to the rising and/or falling clock edge(s) of cam_pclk_clk.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on cam_data[6] relative to the rising and/or falling clock edge(s) of cam_pclk_clk.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on cam_data[7] relative to the rising and/or falling clock edge(s) of cam_pclk_clk.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on cam_href relative to the rising and/or falling clock edge(s) of cam_pclk_clk.
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on cam_vsync relative to the rising and/or falling clock edge(s) of cam_pclk_clk.
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on mic_sd_lr relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on mic_sd_ud relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An output delay is missing on cam_pwdn relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An output delay is missing on cam_reset relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An output delay is missing on cam_scl relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An output delay is missing on cam_sda relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An output delay is missing on led[0] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An output delay is missing on led[1] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An output delay is missing on led[2] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An output delay is missing on led[3] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An output delay is missing on led[4] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on led[5] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on led[6] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on led[7] relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on mic_sck relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on mic_ws relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on servo0 relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on uart_txd relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on vib relative to the rising and/or falling clock edge(s) of clk.
+Related violations: <none>
+
+

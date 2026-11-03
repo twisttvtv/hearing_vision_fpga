@@ -1,0 +1,454 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Tue Nov  3 15:28:25 2026
+| Host         : twisttv running 64-bit major release  (build 9200)
+| Command      : report_drc -file D:/FPGA/hearing_vision/test/build/reports/drc.rpt
+| Design       : camera_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: impl_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 81
++-----------+----------+---------------------------------+--------+
+| Rule      | Severity | Description                     | Checks |
++-----------+----------+---------------------------------+--------+
+| CHECK-3   | Warning  | Report rule limit reached       | 2      |
+| DPIP-1    | Warning  | Input pipelining                | 18     |
+| DPOP-1    | Warning  | PREG Output pipelining          | 9      |
+| DPOP-2    | Warning  | MREG Output pipelining          | 9      |
+| PLCK-12   | Warning  | Clock Placer Checks             | 1      |
+| REQP-1839 | Warning  | RAMB36 async control check      | 20     |
+| REQP-1840 | Warning  | RAMB18 async control check      | 20     |
+| RPBF-3    | Warning  | IO port buffering is incomplete | 2      |
++-----------+----------+---------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+CHECK-3#2 Warning
+Report rule limit reached  
+REQP-1840 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next input camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq1 input camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq1 input camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq2 input camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq2 input camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq3 input camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq3 input camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq4 input camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq4 input camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 input camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 input camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 input camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 input camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next output camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq1 output camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq2 output camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq3 output camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq4 output camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 output camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 output camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 output camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 output camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next multiplier stage camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_corr_engine/product_next/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq1 multiplier stage camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq2 multiplier stage camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq3 multiplier stage camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq4 multiplier stage camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/sq4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1 multiplier stage camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2 multiplier stage camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3 multiplier stage camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4 multiplier stage camera_i/model_camera_top_0/inst/u_io/u_mic/u_voice_vad/sq4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PLCK-12#1 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	clk_IBUF_inst (IBUF.O) is locked to AA18
+	clk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
+
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRARDADDR[10] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr[7]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRARDADDR[11] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr[8]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRARDADDR[12] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr[9]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRARDADDR[13] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr[10]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRARDADDR[14] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr[11]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRARDADDR[3] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr[0]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRARDADDR[4] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr[1]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRARDADDR[5] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr[2]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRARDADDR[6] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr[3]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRARDADDR[7] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr[4]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRARDADDR[8] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr[5]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRARDADDR[9] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr[6]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/wr_ptr_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRBWRADDR[14] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/rd_full_addr[11]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/frame_start_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRBWRADDR[14] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/rd_full_addr[11]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/frame_start_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRBWRADDR[14] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/rd_full_addr[11]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/frame_start_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRBWRADDR[14] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/rd_full_addr[11]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/frame_start_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRBWRADDR[14] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/rd_full_addr[11]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/frame_start_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRBWRADDR[14] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/rd_full_addr[11]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/frame_start_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRBWRADDR[14] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/rd_full_addr[11]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/frame_start_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 has an input control pin camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0/ADDRBWRADDR[14] (net: camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/rd_full_addr[11]) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/rd_sel_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[10] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry_n_6) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/index_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[10] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry_n_6) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/index_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#3 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[10] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry_n_6) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/index_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#4 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[10] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry_n_6) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/index_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#5 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[11] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry_n_5) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/index_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#6 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[11] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry_n_5) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/index_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#7 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[11] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry_n_5) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/index_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#8 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[11] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry_n_5) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/index_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#9 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[11] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry_n_5) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/write_ptr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#10 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[12] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry_n_4) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/index_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#11 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[12] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry_n_4) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/index_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#12 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[12] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry_n_4) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/index_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#13 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[12] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry_n_4) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/index_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#14 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[12] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry_n_4) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/write_ptr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#15 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[13] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry__0_n_7) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/index_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#16 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[13] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry__0_n_7) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/index_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#17 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[13] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry__0_n_7) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/index_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#18 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[13] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry__0_n_7) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/index_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#19 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[13] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry__0_n_7) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/index_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#20 Warning
+RAMB18 async control check  
+The RAMB18E1 camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg has an input control pin camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg/ADDRARDADDR[13] (net: camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/p_1_in__0_carry__0_n_7) which is driven by a register (camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/write_ptr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+RPBF-3#1 Warning
+IO port buffering is incomplete  
+Device port cam_scl expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#2 Warning
+IO port buffering is incomplete  
+Device port cam_sda expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+

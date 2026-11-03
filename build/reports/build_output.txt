@@ -1,0 +1,1893 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Tue Nov  3 15:22:03 2026
+# Process ID         : 7820
+# Current directory  : D:/FPGA/hearing_vision/test
+# Command line       : vivado.exe -mode batch -source build/build.tcl -log build.log -journal build.jou
+# Log file           : D:/FPGA/hearing_vision/test/build.log
+# Journal file       : D:/FPGA/hearing_vision/test\build.jou
+# Running On         : twisttv
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 7 8845HS w/ Radeon 780M Graphics     
+# CPU Frequency      : 3793 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 33601 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35749 MB
+# Available Virtual  : 9646 MB
+#-----------------------------------------------------------
+source build/build.tcl
+# set hv_root [file normalize [file join [file dirname [info script]] ..]]
+# open_project [file join $hv_root build work hearing_vision_fpga.xpr]
+Scanning sources...
+Finished scanning sources
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.1 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.1\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24i\1.0\board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.2\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.3\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.4\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.2\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.3\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.4\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kc705\1.6\board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.7 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kc705\1.7\board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.4\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.5\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu1500\1.2\board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kd240_som\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.1 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kd240_som\1.1\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kr260_som\1.0\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kr260_som\1.1\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.2\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.3\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.4\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:scu35:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\scu35\1.0\board.xml as part xcsu35p-sbvb625-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\sp701\1.0\board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:sp701:part0:1.1 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\sp701\1.1\board.xml as part xc7s100fgga676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc707\1.4\board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.5 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc707\1.5\board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc709\1.8\board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\2.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.4\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.0\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.3\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.4\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu128\production\1.0\board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu129\production\1.0\board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu1525\1.3\board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.1 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.1\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385_1:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385_2\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_mpsoc\1.0\board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_rfsoc\1.0\board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\2.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.3\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.0\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.1\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.2\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.0\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.1\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.2\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vrk160\1.0\board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.1 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vrk160\1.1\board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu102\3.3\board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu102\3.4\board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu104\1.1\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.4\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.5\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.6\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.2\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.3\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.4\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1275\1.0\board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1285\1.0\board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208\production\2.0\board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216\production\2.0\board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670\2.0\board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/vitis/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vitis/2025.2/Vivado/data/ip'.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design D:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.srcs/sources_1/bd/bd/camera.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ camera_xlconstant_0_0
+camera_xlconstant_1_0
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 540.922 ; gain = 232.863
+# launch_runs synth_1 -jobs 4
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Tue Nov  3 15:22:23 2026] Launched synth_1...
+Run output will be captured here: D:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.runs/synth_1/runme.log
+# wait_on_run synth_1
+[Tue Nov  3 15:22:23 2026] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log camera_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source camera_wrapper.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Nov  3 15:22:27 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source camera_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 530.680 ; gain = 220.734
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vitis/2025.2/Vivado/data/ip'.
+INFO: [Project 1-5698] Found the below utility IPs instantiated in block design D:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.srcs/sources_1/bd/bd/camera.bd which have equivalent inline hdl with improved performance and reduced diskspace.
+It is recommended to migrate these utility IPs to inline hdl  using the command upgrade_project -migrate_to_inline_hdl.  The utility IPs may be deprecated in future releases.
+More information on inline hdl is available in UG994.
+Utility IP Component Instances:
+ camera_xlconstant_0_0
+camera_xlconstant_1_0
+Command: synth_design -top camera_wrapper -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 29588
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1332.164 ; gain = 537.980
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'camera_wrapper' [D:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/hdl/camera_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'camera' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/synth/camera.v:13]
+INFO: [Synth 8-6157] synthesizing module 'camera_axi_interconnect_0_0' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/synth/camera.v:378]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_122BFEA' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/synth/camera.v:632]
+INFO: [Synth 8-6157] synthesizing module 'camera_axi_interconnect_0_imp_auto_pc_0' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_axi_interconnect_0_imp_auto_pc_0/synth/camera_axi_interconnect_0_imp_auto_pc_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_37_axi_protocol_converter' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5285]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_37_b2s' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4704]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_37_b2s_aw_channel' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4360]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_37_b2s_cmd_translator' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3720]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_37_b2s_incr_cmd' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3216]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_37_b2s_incr_cmd' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3216]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_37_b2s_wrap_cmd' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2982]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_37_b2s_wrap_cmd' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2982]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_37_b2s_cmd_translator' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3720]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_37_b2s_wr_cmd_fsm' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3392]
+INFO: [Synth 8-226] default block is never used [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3446]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_37_b2s_wr_cmd_fsm' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3392]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_37_b2s_aw_channel' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4360]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_37_b2s_b_channel' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3906]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_37_b2s_simple_fifo' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_37_b2s_simple_fifo' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_37_b2s_simple_fifo__parameterized0' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_37_b2s_simple_fifo__parameterized0' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_37_b2s_b_channel' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3906]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_37_b2s_ar_channel' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4516]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_37_b2s_rd_cmd_fsm' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3546]
+INFO: [Synth 8-226] default block is never used [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3608]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_37_b2s_rd_cmd_fsm' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3546]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_37_b2s_ar_channel' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4516]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_37_b2s_r_channel' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4155]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_37_b2s_simple_fifo__parameterized1' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_37_b2s_simple_fifo__parameterized1' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_37_b2s_simple_fifo__parameterized2' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_37_b2s_simple_fifo__parameterized2' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:2852]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_37_b2s_r_channel' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4155]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axi_register_slice' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:3721]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized0' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized0' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized1' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized1' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized2' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized2' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axi_register_slice' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:3721]
+INFO: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_36_axi_register_slice' is unconnected for instance 'SI_REG' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4871]
+INFO: [Synth 8-7023] instance 'SI_REG' of module 'axi_register_slice_v2_1_36_axi_register_slice' has 93 connections declared, but only 92 given [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4871]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axi_register_slice__parameterized0' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:3721]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized3' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized3' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized4' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized4' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized5' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized5' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized6' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axic_register_slice__parameterized6' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1492]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_36_axi_register_slice__parameterized0' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:3721]
+INFO: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_36_axi_register_slice' is unconnected for instance 'MI_REG' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5126]
+INFO: [Synth 8-7023] instance 'MI_REG' of module 'axi_register_slice_v2_1_36_axi_register_slice' has 93 connections declared, but only 92 given [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5126]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_37_b2s' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4704]
+INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_37_axi_protocol_converter' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5285]
+INFO: [Synth 8-6155] done synthesizing module 'camera_axi_interconnect_0_imp_auto_pc_0' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_axi_interconnect_0_imp_auto_pc_0/synth/camera_axi_interconnect_0_imp_auto_pc_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_122BFEA' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/synth/camera.v:632]
+INFO: [Synth 8-6155] done synthesizing module 'camera_axi_interconnect_0_0' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/synth/camera.v:378]
+INFO: [Synth 8-6157] synthesizing module 'camera_model_camera_top_0_0' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_model_camera_top_0_0/synth/camera_model_camera_top_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'model_camera_top' [D:/FPGA/hearing_vision/test/src/rtl/model_camera_top.v:3]
+	Parameter CLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 921600 - type: integer 
+	Parameter VIDEO_WIDTH bound to: 320 - type: integer 
+	Parameter VIDEO_HEIGHT bound to: 180 - type: integer 
+	Parameter VSYNC_ACTIVE_LOW bound to: 1 - type: integer 
+	Parameter ENABLE_PREVIEW bound to: 1 - type: integer 
+	Parameter MIC_CLK_DIV bound to: 32 - type: integer 
+	Parameter MIC_FRAME_LEN bound to: 1920 - type: integer 
+	Parameter MIC_HOP_LEN bound to: 480 - type: integer 
+	Parameter MIC_MAX_DELAY bound to: 6 - type: integer 
+	Parameter MIC_ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter VAD_INIT_HOPS bound to: 50 - type: integer 
+	Parameter VAD_ATTACK_HOPS bound to: 5 - type: integer 
+	Parameter VAD_RELEASE_HOPS bound to: 35 - type: integer 
+	Parameter VAD_ABS_MEAN_POWER bound to: 16 - type: integer 
+	Parameter VAD_NOISE_MULT_SHIFT bound to: 1 - type: integer 
+	Parameter VAD_STOP_MULT_SHIFT bound to: 0 - type: integer 
+	Parameter CORR_CONF_SHIFT bound to: 4 - type: integer 
+	Parameter AUDIO_BLOCK_SAMPLES bound to: 480 - type: integer 
+	Parameter SERVO_SIMULATION bound to: 0 - type: integer 
+	Parameter VAD_ABS_FRAME_ENERGY bound to: 6000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'model_uart' [D:/FPGA/hearing_vision/test/src/rtl/model_uart.v:3]
+	Parameter CLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 921600 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'model_uart' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/model_uart.v:3]
+INFO: [Synth 8-6157] synthesizing module 'model_sync' [D:/FPGA/hearing_vision/test/src/rtl/model_sync.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'model_sync' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/model_sync.v:4]
+INFO: [Synth 8-6157] synthesizing module 'model_initial' [D:/FPGA/hearing_vision/test/src/rtl/model_initial.v:19]
+	Parameter CLK_FREQ_HZ bound to: 100000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'model_initial' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/model_initial.v:19]
+INFO: [Synth 8-6157] synthesizing module 'model_sccb_write' [D:/FPGA/hearing_vision/test/src/rtl/model_sccb_write.v:22]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/hearing_vision/test/src/rtl/model_sccb_write.v:335]
+INFO: [Synth 8-226] default block is never used [D:/FPGA/hearing_vision/test/src/rtl/model_sccb_write.v:361]
+INFO: [Synth 8-6155] done synthesizing module 'model_sccb_write' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/model_sccb_write.v:22]
+INFO: [Synth 8-6157] synthesizing module 'model_capture' [D:/FPGA/hearing_vision/test/src/rtl/model_capture.v:3]
+	Parameter LOW_BYTE_FIRST bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'model_capture' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/model_capture.v:3]
+INFO: [Synth 8-6157] synthesizing module 'model_video_input' [D:/FPGA/hearing_vision/test/src/rtl/model_video_input.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'model_video_input' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/model_video_input.v:4]
+INFO: [Synth 8-6157] synthesizing module 'model_frame_buffer' [D:/FPGA/hearing_vision/test/src/rtl/model_frame_buffer.v:4]
+	Parameter WIDTH bound to: 320 - type: integer 
+	Parameter HEIGHT bound to: 180 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'model_frame_buffer' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/model_frame_buffer.v:4]
+INFO: [Synth 8-6157] synthesizing module 'model_camera_axi' [D:/FPGA/hearing_vision/test/src/rtl/model_camera_axi.v:4]
+	Parameter CLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter VIDEO_WIDTH bound to: 320 - type: integer 
+	Parameter VIDEO_HEIGHT bound to: 180 - type: integer 
+	Parameter AUDIO_BLOCK_SAMPLES bound to: 480 - type: integer 
+	Parameter MIC_SAMPLE_TICKS bound to: 2048 - type: integer 
+	Parameter ENABLE_PREVIEW bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'model_camera_axi' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/model_camera_axi.v:4]
+INFO: [Synth 8-6157] synthesizing module 'model_camera_io' [D:/FPGA/hearing_vision/test/src/rtl/model_camera_io.v:2]
+	Parameter CLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter MIC_CLK_DIV bound to: 32 - type: integer 
+	Parameter FRAME_LEN bound to: 1920 - type: integer 
+	Parameter HOP_LEN bound to: 480 - type: integer 
+	Parameter MAX_DELAY bound to: 6 - type: integer 
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter VAD_INIT_HOPS bound to: 50 - type: integer 
+	Parameter VAD_ATTACK_HOPS bound to: 5 - type: integer 
+	Parameter VAD_RELEASE_HOPS bound to: 35 - type: integer 
+	Parameter VAD_ABS_MEAN_POWER bound to: 16 - type: integer 
+	Parameter AUDIO_BLOCK_SAMPLES bound to: 480 - type: integer 
+	Parameter VAD_NOISE_MULT_SHIFT bound to: 1 - type: integer 
+	Parameter VAD_STOP_MULT_SHIFT bound to: 0 - type: integer 
+	Parameter CORR_CONF_SHIFT bound to: 4 - type: integer 
+	Parameter SIMULATION bound to: 0 - type: integer 
+	Parameter VAD_ABS_FRAME_ENERGY bound to: 6000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'tdoa_top_v2' [D:/FPGA/hearing_vision/test/src/rtl/tdoa_top_v2.v:3]
+	Parameter CLK_DIV bound to: 32 - type: integer 
+	Parameter FRAME_LEN bound to: 1920 - type: integer 
+	Parameter HOP_LEN bound to: 480 - type: integer 
+	Parameter MAX_DELAY bound to: 6 - type: integer 
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter VAD_INIT_HOPS bound to: 50 - type: integer 
+	Parameter VAD_ATTACK_HOPS bound to: 5 - type: integer 
+	Parameter VAD_RELEASE_HOPS bound to: 35 - type: integer 
+	Parameter VAD_ABS_MEAN_POWER bound to: 16 - type: integer 
+	Parameter VAD_NOISE_MULT_SHIFT bound to: 1 - type: integer 
+	Parameter VAD_STOP_MULT_SHIFT bound to: 0 - type: integer 
+	Parameter CORR_CONF_SHIFT bound to: 4 - type: integer 
+	Parameter VAD_ABS_FRAME_ENERGY bound to: 6000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'inmp441_4ch_rx' [D:/FPGA/hearing_vision/test/src/rtl/inmp441_4ch_rx.v:3]
+	Parameter CLK_DIV bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'inmp441_4ch_rx' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/inmp441_4ch_rx.v:3]
+INFO: [Synth 8-6157] synthesizing module 'voice_band_energy_vad_v2' [D:/FPGA/hearing_vision/test/src/rtl/voice_band_energy_vad_v2.v:10]
+	Parameter HOP_LEN bound to: 480 - type: integer 
+	Parameter INIT_HOPS bound to: 50 - type: integer 
+	Parameter ATTACK_HOPS bound to: 5 - type: integer 
+	Parameter RELEASE_HOPS bound to: 35 - type: integer 
+	Parameter ABS_MEAN_POWER bound to: 16 - type: integer 
+	Parameter NOISE_MULT_SHIFT bound to: 1 - type: integer 
+	Parameter STOP_MULT_SHIFT bound to: 0 - type: integer 
+	Parameter ABS_FRAME_ENERGY_OVERRIDE bound to: 6000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'voice_band_energy_vad_v2' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/voice_band_energy_vad_v2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'frame_buffer_4ch' [D:/FPGA/hearing_vision/test/src/rtl/frame_buffer_4ch.v:3]
+	Parameter FRAME_LEN bound to: 1920 - type: integer 
+	Parameter HOP_LEN bound to: 480 - type: integer 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'frame_buffer_4ch' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/frame_buffer_4ch.v:3]
+INFO: [Synth 8-6157] synthesizing module 'tdoa_scheduler_v2' [D:/FPGA/hearing_vision/test/src/rtl/tdoa_scheduler_v2.v:8]
+	Parameter FRAME_LEN bound to: 1920 - type: integer 
+	Parameter MAX_DELAY bound to: 6 - type: integer 
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter VAD_INIT_FRAMES bound to: 64 - type: integer 
+	Parameter CORR_CONF_SHIFT bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'energy_vad' [D:/FPGA/hearing_vision/test/src/rtl/energy_vad.v:3]
+	Parameter FRAME_LEN bound to: 1920 - type: integer 
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+	Parameter VAD_INIT_FRAMES bound to: 64 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'energy_vad' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/energy_vad.v:3]
+INFO: [Synth 8-6157] synthesizing module 'corr_engine' [D:/FPGA/hearing_vision/test/src/rtl/corr_engine.v:3]
+	Parameter FRAME_LEN bound to: 1920 - type: integer 
+	Parameter MAX_DELAY bound to: 6 - type: integer 
+	Parameter ADDR_WIDTH bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'corr_engine' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/corr_engine.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'tdoa_scheduler_v2' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/tdoa_scheduler_v2.v:8]
+INFO: [Synth 8-6157] synthesizing module 'cordic_atan2' [D:/FPGA/hearing_vision/test/src/rtl/cordic_atan2.v:3]
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter CORDIC_WIDTH bound to: 20 - type: integer 
+	Parameter ITERATIONS bound to: 16 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/FPGA/hearing_vision/test/src/rtl/cordic_atan2.v:185]
+INFO: [Synth 8-6155] done synthesizing module 'cordic_atan2' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/cordic_atan2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'tdoa_top_v2' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/tdoa_top_v2.v:3]
+WARNING: [Synth 8-7071] port 'smooth_dx_q8_8' of module 'tdoa_top_v2' is unconnected for instance 'u_mic' [D:/FPGA/hearing_vision/test/src/rtl/model_camera_io.v:42]
+WARNING: [Synth 8-7071] port 'smooth_dy_q8_8' of module 'tdoa_top_v2' is unconnected for instance 'u_mic' [D:/FPGA/hearing_vision/test/src/rtl/model_camera_io.v:42]
+WARNING: [Synth 8-7071] port 'raw_dx_q8_8' of module 'tdoa_top_v2' is unconnected for instance 'u_mic' [D:/FPGA/hearing_vision/test/src/rtl/model_camera_io.v:42]
+WARNING: [Synth 8-7071] port 'raw_dy_q8_8' of module 'tdoa_top_v2' is unconnected for instance 'u_mic' [D:/FPGA/hearing_vision/test/src/rtl/model_camera_io.v:42]
+WARNING: [Synth 8-7071] port 'result_valid' of module 'tdoa_top_v2' is unconnected for instance 'u_mic' [D:/FPGA/hearing_vision/test/src/rtl/model_camera_io.v:42]
+WARNING: [Synth 8-7071] port 'mic_sample_valid_dbg' of module 'tdoa_top_v2' is unconnected for instance 'u_mic' [D:/FPGA/hearing_vision/test/src/rtl/model_camera_io.v:42]
+WARNING: [Synth 8-7071] port 'frame_valid_dbg' of module 'tdoa_top_v2' is unconnected for instance 'u_mic' [D:/FPGA/hearing_vision/test/src/rtl/model_camera_io.v:42]
+WARNING: [Synth 8-7071] port 'frame_sel_dbg' of module 'tdoa_top_v2' is unconnected for instance 'u_mic' [D:/FPGA/hearing_vision/test/src/rtl/model_camera_io.v:42]
+WARNING: [Synth 8-7023] instance 'u_mic' of module 'tdoa_top_v2' has 25 connections declared, but only 17 given [D:/FPGA/hearing_vision/test/src/rtl/model_camera_io.v:42]
+INFO: [Synth 8-6157] synthesizing module 'model_camera_audio_buffer' [D:/FPGA/hearing_vision/test/src/rtl/model_camera_audio_buffer.v:3]
+	Parameter BLOCK_SAMPLES bound to: 480 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'model_camera_audio_buffer' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/model_camera_audio_buffer.v:3]
+INFO: [Synth 8-6157] synthesizing module 'model_camera_control' [D:/FPGA/hearing_vision/test/src/rtl/model_camera_control.v:5]
+	Parameter CLK_HZ bound to: 100000000 - type: integer 
+	Parameter SIMULATION bound to: 0 - type: integer 
+	Parameter FRESH_CYCLES bound to: 25000000 - type: integer 
+	Parameter SETTLE_CYCLES bound to: 15000000 - type: integer 
+	Parameter VIB_CYCLES bound to: 30000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'servo_pwm' [D:/FPGA/hearing_vision/test/src/rtl/servo_pwm.v:9]
+	Parameter CLK_HZ bound to: 100000000 - type: integer 
+	Parameter SIMULATION bound to: 0 - type: integer 
+	Parameter REVERSE_DIRECTION bound to: 1 - type: integer 
+	Parameter REAR_NEAREST_ENDPOINT bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/FPGA/hearing_vision/test/src/rtl/servo_pwm.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'servo_pwm' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/servo_pwm.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'model_camera_control' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/model_camera_control.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'model_camera_io' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/model_camera_io.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'model_camera_top' (0#1) [D:/FPGA/hearing_vision/test/src/rtl/model_camera_top.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'camera_model_camera_top_0_0' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_model_camera_top_0_0/synth/camera_model_camera_top_0_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'camera_proc_sys_reset_0_0' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_proc_sys_reset_0_0/synth/camera_proc_sys_reset_0_0.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b0 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'd:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1243' bound to instance 'U0' of component 'proc_sys_reset' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_proc_sys_reset_0_0/synth/camera_proc_sys_reset_0_0.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1371]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1387]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1413]
+	Parameter INIT bound to: 1'b1 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1436]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1460]
+INFO: [Synth 8-638] synthesizing module 'lpf' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'D:/vitis/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165318' bound to instance 'POR_SRL_I' of component 'SRL16' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:873]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [D:/vitis/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165318]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [D:/vitis/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165318]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/vitis/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_EXT' of component 'xpm_cdc_single' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:968]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [D:/vitis/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [D:/vitis/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+	Parameter DEST_SYNC_FF bound to: 4 - type: integer 
+	Parameter INIT_SYNC_FF bound to: 0 - type: integer 
+	Parameter SIM_ASSERT_CHK bound to: 0 - type: integer 
+	Parameter SRC_INPUT_REG bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'xpm_cdc_single' declared at 'D:/vitis/2025.2/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152' bound to instance 'ACT_LO_AUX' of component 'xpm_cdc_single' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1015]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:126]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:304]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/9438/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1302]
+INFO: [Synth 8-256] done synthesizing module 'camera_proc_sys_reset_0_0' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_proc_sys_reset_0_0/synth/camera_proc_sys_reset_0_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'camera_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/synth/camera.v:302]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'camera_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/synth/camera.v:302]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'camera_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/synth/camera.v:302]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'camera_proc_sys_reset_0_0' has 10 connections declared, but only 7 given [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/synth/camera.v:302]
+INFO: [Synth 8-6157] synthesizing module 'camera_processing_system7_0_0' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/synth/camera_processing_system7_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/vitis/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [D:/vitis/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6157] synthesizing module 'BIBUF' [D:/vitis/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2325]
+INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (0#1) [D:/vitis/2025.2/Vivado/scripts/rt/data/unisim_comp.v:2325]
+INFO: [Synth 8-6157] synthesizing module 'PS7' [D:/vitis/2025.2/Vivado/scripts/rt/data/unisim_comp.v:140294]
+INFO: [Synth 8-6155] done synthesizing module 'PS7' (0#1) [D:/vitis/2025.2/Vivado/scripts/rt/data/unisim_comp.v:140294]
+INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
+INFO: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/synth/camera_processing_system7_0_0.v:320]
+INFO: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/synth/camera_processing_system7_0_0.v:320]
+INFO: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/synth/camera_processing_system7_0_0.v:320]
+INFO: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/synth/camera_processing_system7_0_0.v:320]
+INFO: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/synth/camera_processing_system7_0_0.v:320]
+INFO: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/synth/camera_processing_system7_0_0.v:320]
+INFO: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/synth/camera_processing_system7_0_0.v:320]
+INFO: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/synth/camera_processing_system7_0_0.v:320]
+INFO: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/synth/camera_processing_system7_0_0.v:320]
+INFO: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/synth/camera_processing_system7_0_0.v:320]
+INFO: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/synth/camera_processing_system7_0_0.v:320]
+INFO: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/synth/camera_processing_system7_0_0.v:320]
+INFO: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/synth/camera_processing_system7_0_0.v:320]
+INFO: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/synth/camera_processing_system7_0_0.v:320]
+INFO: [Synth 8-6155] done synthesizing module 'camera_processing_system7_0_0' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/synth/camera_processing_system7_0_0.v:53]
+WARNING: [Synth 8-7071] port 'FCLK_CLK0' of module 'camera_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/synth/camera.v:310]
+WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'camera_processing_system7_0_0' has 62 connections declared, but only 61 given [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/synth/camera.v:310]
+INFO: [Synth 8-6157] synthesizing module 'camera_xlconstant_0_0' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_xlconstant_0_0/synth/camera_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_10_xlconstant' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_10_xlconstant' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'camera_xlconstant_0_0' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_xlconstant_0_0/synth/camera_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'camera_xlconstant_1_0' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_xlconstant_1_0/synth/camera_xlconstant_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_10_xlconstant__parameterized0' [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_10_xlconstant__parameterized0' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'camera_xlconstant_1_0' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_xlconstant_1_0/synth/camera_xlconstant_1_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'camera' (0#1) [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/synth/camera.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'camera_wrapper' (0#1) [D:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/hdl/camera_wrapper.v:13]
+INFO: [Synth 8-6014] Unused sequential element state_r1_reg was removed.  [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3596]
+INFO: [Synth 8-6014] Unused sequential element s_arlen_r_reg was removed.  [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/d98a/hdl/axi_protocol_converter_v2_1_vl_rfs.v:3597]
+WARNING: [Synth 8-7137] Register fifo_reg in module model_uart has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
+WARNING: [Synth 8-4767] Trying to implement RAM 'fifo_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons. [D:/FPGA/hearing_vision/test/src/rtl/model_uart.v:25]
+Reason is one or more of the following :
+	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
+WARNING: [Synth 8-6014] Unused sequential element wait_ack_reg was removed.  [D:/FPGA/hearing_vision/test/src/rtl/model_sccb_write.v:557]
+WARNING: [Synth 8-6014] Unused sequential element ack_ok_reg was removed.  [D:/FPGA/hearing_vision/test/src/rtl/model_sccb_write.v:558]
+WARNING: [Synth 8-6014] Unused sequential element start_cond_reg was removed.  [D:/FPGA/hearing_vision/test/src/rtl/model_sccb_write.v:559]
+WARNING: [Synth 8-7137] Register start_count_reg in module energy_vad has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/FPGA/hearing_vision/test/src/rtl/energy_vad.v:322]
+WARNING: [Synth 8-6014] Unused sequential element base_angle_reg was removed.  [D:/FPGA/hearing_vision/test/src/rtl/cordic_atan2.v:130]
+WARNING: [Synth 8-7129] Port ENET0_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RX_DV in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RX_ER in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET0_GMII_RXD[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RX_DV in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RX_ER in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ENET1_GMII_RXD[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP0_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP0_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP1_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_GP1_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ACP_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ACP_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP0_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP0_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP1_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP1_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP2_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP2_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP3_ARSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_HP3_AWSIZE[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG3_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG2_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG1_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FCLK_CLKTRIG0_N in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[31] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[30] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[29] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[28] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[27] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[26] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[25] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[24] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[23] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[22] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[21] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[20] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[19] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[18] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[17] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[16] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[15] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[14] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[13] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[12] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[11] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[10] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[9] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[8] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[7] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[6] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[5] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[4] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_DATA[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_VALID in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[2] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FTMD_TRACEIN_ATID[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[31] in module model_camera_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[30] in module model_camera_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[29] in module model_camera_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[28] in module model_camera_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[27] in module model_camera_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[26] in module model_camera_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[25] in module model_camera_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[24] in module model_camera_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[23] in module model_camera_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[22] in module model_camera_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[21] in module model_camera_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[20] in module model_camera_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[19] in module model_camera_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[2] in module model_camera_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[1] in module model_camera_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[0] in module model_camera_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[31] in module model_camera_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[30] in module model_camera_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[29] in module model_camera_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[28] in module model_camera_axi is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1653.117 ; gain = 858.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1653.117 ; gain = 858.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1653.117 ; gain = 858.934
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.215 . Memory (MB): peak = 1653.117 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/camera_processing_system7_0_0.xdc] for cell 'camera_i/processing_system7_0/inst'
+Finished Parsing XDC File [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/camera_processing_system7_0_0.xdc] for cell 'camera_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/camera_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/camera_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/camera_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_proc_sys_reset_0_0/camera_proc_sys_reset_0_0_board.xdc] for cell 'camera_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_proc_sys_reset_0_0/camera_proc_sys_reset_0_0_board.xdc] for cell 'camera_i/proc_sys_reset_0/U0'
+Parsing XDC File [D:/FPGA/hearing_vision/test/board/xdc/model_camera_pin.xdc]
+Finished Parsing XDC File [D:/FPGA/hearing_vision/test/board/xdc/model_camera_pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/FPGA/hearing_vision/test/board/xdc/model_camera_pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/camera_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/camera_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/FPGA/hearing_vision/test/board/xdc/model_camera_preview.xdc]
+Finished Parsing XDC File [D:/FPGA/hearing_vision/test/board/xdc/model_camera_preview.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/FPGA/hearing_vision/test/board/xdc/model_camera_preview.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/camera_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/camera_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/camera_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/camera_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/vitis/2025.2/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/camera_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/camera_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 2 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1653.117 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.141 . Memory (MB): peak = 1653.117 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1653.117 ; gain = 858.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1653.117 ; gain = 858.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 1653.117 ; gain = 858.934
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_37_b2s_wr_cmd_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_protocol_converter_v2_1_37_b2s_rd_cmd_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'model_initial'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'model_sccb_write'
+INFO: [Synth 8-802] inferred FSM for state register 'read_state_reg' in module 'model_camera_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'voice_band_energy_vad_v2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'energy_vad'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'corr_engine'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'tdoa_scheduler_v2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'cordic_atan2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                               01 |                               00
+               SM_CMD_EN |                               11 |                               01
+         SM_CMD_ACCEPTED |                               10 |                               10
+            SM_DONE_WAIT |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_37_b2s_wr_cmd_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 SM_IDLE |                               01 |                               00
+               SM_CMD_EN |                               11 |                               01
+         SM_CMD_ACCEPTED |                               10 |                               10
+                 SM_DONE |                               00 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'axi_protocol_converter_v2_1_37_b2s_rd_cmd_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+         ST_RST_LOW_20MS |                             0000 |                             0000
+         ST_PWDN_LOW_5MS |                             0001 |                             0001
+        ST_RST_HIGH_20MS |                             0010 |                             0010
+        ST_SCCB_WAIT_5MS |                             0011 |                             0011
+           ST_WRITE_3103 |                             0100 |                             0100
+            ST_WAIT_3103 |                             0101 |                             0101
+           ST_WRITE_3008 |                             0110 |                             0110
+            ST_WAIT_3008 |                             0111 |                             0111
+         ST_SWRESET_10MS |                             1000 |                             1000
+            ST_UXGA_SEND |                             1001 |                             1001
+            ST_UXGA_WAIT |                             1010 |                             1010
+             ST_RGB_SEND |                             1011 |                             1011
+             ST_RGB_WAIT |                             1100 |                             1100
+                 ST_DONE |                             1101 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'model_initial'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                          0000001 |                              000
+             STATE_START |                          0000010 |                              001
+              STATE_SEND |                          0000100 |                              010
+               STATE_ACK |                          0001000 |                              011
+             STATE_STOP0 |                          0010000 |                              100
+             STATE_STOP1 |                          0100000 |                              101
+             STATE_STOP2 |                          1000000 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'model_sccb_write'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                WAIT_LOW |                              001 |                              001
+               LATCH_LOW |                              010 |                              010
+               WAIT_HIGH |                              011 |                              011
+              LATCH_HIGH |                              100 |                              100
+                RESPONSE |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'read_state_reg' using encoding 'sequential' in module 'model_camera_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                S_SAMPLE |                              000 |                              000
+                    S_HP |                              001 |                              001
+                    S_LP |                              010 |                              010
+                    S_SQ |                              011 |                              011
+                 S_ACCUM |                              100 |                              100
+                S_DECIDE |                              101 |                              101
+                 S_APPLY |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'voice_band_energy_vad_v2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              000 |                              000
+               S_RD_WAIT |                              001 |                              001
+               S_SCAN_SQ |                              010 |                              010
+              S_SCAN_SUM |                              011 |                              011
+              S_SCAN_ACC |                              100 |                              100
+              S_MEAN_MUL |                              101 |                              101
+              S_MEAN_OUT |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'energy_vad'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                       0000000001 |                             0000
+              S_REF_WAIT |                       0000000010 |                             0001
+               S_REF_CAP |                       0000000100 |                             0010
+              S_DEL_WAIT |                       0000001000 |                             0011
+               S_DEL_CAP |                       0000010000 |                             0100
+               S_MAC_MUL |                       0000100000 |                             0101
+               S_MAC_ACC |                       0001000000 |                             0110
+              S_LAG_DONE |                       0010000000 |                             0111
+                S_FINISH |                       0100000000 |                             1000
+                  S_DONE |                       1000000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'corr_engine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                              001 |                               00
+               S_DX_WAIT |                              010 |                               01
+               S_DY_WAIT |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'tdoa_scheduler_v2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                               00 |                               00
+                   S_RUN |                               01 |                               01
+                  S_QUAD |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'cordic_atan2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 1653.117 ; gain = 858.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/aw.aw_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_axilite.gen_b2s_conv.axilite_b2s/SI_REG/ar.ar_pipe/m_payload_i_reg' and it is trimmed from '66' to '62' bits. [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ipshared/bc4b/hdl/axi_register_slice_v2_1_vl_rfs.v:1726]
+WARNING: [Synth 8-3332] Sequential element (FDRE_inst) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:05 . Memory (MB): peak = 1692.863 ; gain = 898.680
+---------------------------------------------------------------------------------
+ Sort Area is  u_corr_engine/product_next_9 : 0 0 : 2604 2604 : Used 1 time 0
+ Sort Area is  sq1_0 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is  sq1_5 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is  sq2_4 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is  sq2_8 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is  sq3_3 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is  sq3_7 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is  sq4_2 : 0 0 : 1937 1937 : Used 1 time 0
+ Sort Area is  sq4_6 : 0 0 : 1937 1937 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:13 . Memory (MB): peak = 1937.723 ; gain = 1143.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:17 . Memory (MB): peak = 2007.883 ; gain = 1213.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_1_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_1_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_1_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_1_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_1_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_1_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_1_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_1_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_1_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_1_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_1_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_1_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_1_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_3_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_3_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_3_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_3_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_3_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_3_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_3_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_3_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_3_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_3_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_3_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_3_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_3_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_3_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_3_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_video_buffer/memory_reg_3_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_io/u_mic/u_frame_buffer/mem_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance camera_i/model_camera_top_0/inst/u_io/u_audio_buffer/memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:15 ; elapsed = 00:01:22 . Memory (MB): peak = 2067.719 ; gain = 1273.535
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:26 . Memory (MB): peak = 2229.066 ; gain = 1434.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:26 . Memory (MB): peak = 2229.066 ; gain = 1434.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:21 ; elapsed = 00:01:28 . Memory (MB): peak = 2229.066 ; gain = 1434.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:21 ; elapsed = 00:01:29 . Memory (MB): peak = 2229.066 ; gain = 1434.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:21 ; elapsed = 00:01:29 . Memory (MB): peak = 2238.164 ; gain = 1443.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:21 ; elapsed = 00:01:29 . Memory (MB): peak = 2238.164 ; gain = 1443.980
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name              | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|corr_engine              | D-A*B       | 30     | 18     | -      | 25     | 36     | 0    | 0    | -    | 0    | 0     | 0    | 0    | 
+|energy_vad               | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|energy_vad               | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|energy_vad               | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|energy_vad               | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|voice_band_energy_vad_v2 | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|voice_band_energy_vad_v2 | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|voice_band_energy_vad_v2 | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|voice_band_energy_vad_v2 | A*B         | 30     | 18     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BIBUF    |   130|
+|2     |BUFG     |     3|
+|3     |CARRY4   |   755|
+|4     |DSP48E1  |     9|
+|6     |LUT1     |   234|
+|7     |LUT2     |  2101|
+|8     |LUT3     |  1179|
+|9     |LUT4     |   884|
+|10    |LUT5     |   743|
+|11    |LUT6     |  1300|
+|12    |MUXF7    |    59|
+|13    |MUXF8    |    16|
+|14    |PS7      |     1|
+|15    |RAMB18E1 |     2|
+|17    |RAMB36E1 |    71|
+|20    |SRL16    |     1|
+|21    |SRL16E   |    21|
+|22    |SRLC32E  |    47|
+|23    |FDCE     |  4520|
+|24    |FDPE     |    25|
+|25    |FDRE     |   738|
+|26    |FDSE     |    27|
+|27    |IBUF     |    15|
+|28    |OBUF     |    15|
+|29    |OBUFT    |     3|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:21 ; elapsed = 00:01:29 . Memory (MB): peak = 2238.164 ; gain = 1443.980
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 153 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:01 ; elapsed = 00:01:21 . Memory (MB): peak = 2238.164 ; gain = 1443.980
+Synthesis Optimization Complete : Time (s): cpu = 00:01:22 ; elapsed = 00:01:29 . Memory (MB): peak = 2238.164 ; gain = 1443.980
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.185 . Memory (MB): peak = 2238.164 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 913 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2250.969 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  SRL16 => SRL16E: 1 instance 
+
+Synth Design complete | Checksum: 4065e9f0
+INFO: [Common 17-83] Releasing license: Synthesis
+269 Infos, 126 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:30 ; elapsed = 00:01:42 . Memory (MB): peak = 2250.969 ; gain = 1702.270
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2250.969 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.runs/synth_1/camera_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file camera_wrapper_utilization_synth.rpt -pb camera_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 15:24:27 2026...
+[Tue Nov  3 15:24:29 2026] synth_1 finished
+wait_on_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:02:06 . Memory (MB): peak = 551.824 ; gain = 0.000
+# if {![string match {*Complete*} [get_property STATUS [get_runs synth_1]]]} { error "Synthesis did not complete" }
+# launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue Nov  3 15:24:31 2026] Launched impl_1...
+Run output will be captured here: D:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.runs/impl_1/runme.log
+# wait_on_run impl_1
+[Tue Nov  3 15:24:31 2026] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log camera_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source camera_wrapper.tcl -notrace
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Tue Nov  3 15:24:40 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source camera_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 527.965 ; gain = 218.816
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vitis/2025.2/Vivado/data/ip'.
+Command: link_design -top camera_wrapper -part xc7z020clg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.126 . Memory (MB): peak = 815.207 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 912 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/camera_processing_system7_0_0.xdc] for cell 'camera_i/processing_system7_0/inst'
+Finished Parsing XDC File [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_processing_system7_0_0/camera_processing_system7_0_0.xdc] for cell 'camera_i/processing_system7_0/inst'
+Parsing XDC File [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_proc_sys_reset_0_0/camera_proc_sys_reset_0_0_board.xdc] for cell 'camera_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [d:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.gen/sources_1/bd/bd/ip/camera_proc_sys_reset_0_0/camera_proc_sys_reset_0_0_board.xdc] for cell 'camera_i/proc_sys_reset_0/U0'
+Parsing XDC File [D:/FPGA/hearing_vision/test/board/xdc/model_camera_pin.xdc]
+Finished Parsing XDC File [D:/FPGA/hearing_vision/test/board/xdc/model_camera_pin.xdc]
+Parsing XDC File [D:/FPGA/hearing_vision/test/board/xdc/model_camera_preview.xdc]
+Finished Parsing XDC File [D:/FPGA/hearing_vision/test/board/xdc/model_camera_preview.xdc]
+INFO: [Project 1-1714] 2 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1533.008 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+11 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1533.008 ; gain = 985.457
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors, 2 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1533.008 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1500c4e14
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.467 . Memory (MB): peak = 1533.008 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1500c4e14
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1962.789 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1500c4e14
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1962.789 ; gain = 0.000
+Phase 1 Initialization | Checksum: 1500c4e14
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1962.789 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 1500c4e14
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1962.812 ; gain = 0.023
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 1500c4e14
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.285 . Memory (MB): peak = 1962.812 ; gain = 0.023
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 1500c4e14
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.294 . Memory (MB): peak = 1962.812 ; gain = 0.023
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1500c4e14
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.295 . Memory (MB): peak = 1962.812 ; gain = 0.023
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 6 inverters resulting in an inversion of 29 pins
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 253770c59
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.637 . Memory (MB): peak = 1962.812 ; gain = 0.023
+Retarget | Checksum: 253770c59
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 34 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 1fa0a3796
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.755 . Memory (MB): peak = 1962.812 ; gain = 0.023
+Constant propagation | Checksum: 1fa0a3796
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 3 cells
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1962.812 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Phase 5 Sweep | Checksum: 21dfaa2a2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1962.812 ; gain = 0.023
+Sweep | Checksum: 21dfaa2a2
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1 cells
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 21dfaa2a2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1962.812 ; gain = 0.023
+BUFG optimization | Checksum: 21dfaa2a2
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 21dfaa2a2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1962.812 ; gain = 0.023
+Shift Register Optimization | Checksum: 21dfaa2a2
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 21dfaa2a2
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1962.812 ; gain = 0.023
+Post Processing Netlist | Checksum: 21dfaa2a2
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 1b0f225fa
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1962.812 ; gain = 0.023
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 1b0f225fa
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1962.812 ; gain = 0.023
+Phase 9 Finalization | Checksum: 1b0f225fa
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1962.812 ; gain = 0.023
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |              34  |                                              0  |
+|  Constant propagation         |               0  |               3  |                                              0  |
+|  Sweep                        |               0  |               1  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 1b0f225fa
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1962.812 ; gain = 0.023
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 73 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 1 Total Ports: 146
+Ending PowerOpt Patch Enables Task | Checksum: 229ce1a2c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.269 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 229ce1a2c
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 229ce1a2c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1962.812 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+38 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1962.812 ; gain = 429.805
+INFO: [Vivado 12-24828] Executing command : report_drc -file camera_wrapper_drc_opted.rpt -pb camera_wrapper_drc_opted.pb -rpx camera_wrapper_drc_opted.rpx
+Command: report_drc -file camera_wrapper_drc_opted.rpt -pb camera_wrapper_drc_opted.pb -rpx camera_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.runs/impl_1/camera_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.115 . Memory (MB): peak = 1962.812 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.runs/impl_1/camera_wrapper_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 44 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1c534b5aa
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	clk_IBUF_inst (IBUF.O) is locked to IOB_X1Y25
+	clk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 106057b13
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: ff184b0d
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: ff184b0d
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: ff184b0d
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 134bde71b
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 189b4be80
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 189b4be80
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 11213fca0
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: d3b5f57d
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:16 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 318 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 138 nets or LUTs. Breaked 0 LUT, combined 138 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            138  |                   138  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            138  |                   138  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: f273c085
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Phase 2.5 Global Place Phase2 | Checksum: 1ac66a8f1
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1ac66a8f1
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1be255d38
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:20 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1b92ded1a
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 14ee7bd9f
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 11be5520e
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:22 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 17503bf6f
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:24 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 230cc58ca
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:28 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 17f3914b1
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1e1eda35c
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:29 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 11ed92287
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:31 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 11ed92287
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:31 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 250f2b9ca
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.021 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 256fc5e1a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.236 . Memory (MB): peak = 1962.812 ; gain = 0.000
+INFO: [Place 46-33] Processed net camera_i/model_camera_top_0/inst/u_io/u_mic/u_tdoa_scheduler/u_frame_stats/io_reset_sync_reg[1], BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 2247d5117
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.529 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 250f2b9ca
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:34 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.223. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 1aeec658e
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:01:05 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:01:05 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 1aeec658e
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:01:05 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1aeec658e
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:01:05 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                2x2|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1aeec658e
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:01:06 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 1aeec658e
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:01:06 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:01:06 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 187706e50
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:01:06 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Ending Placer Task | Checksum: 1567b6bdc
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:01:06 . Memory (MB): peak = 1962.812 ; gain = 0.000
+82 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:24 ; elapsed = 00:01:09 . Memory (MB): peak = 1962.812 ; gain = 0.000
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file camera_wrapper_utilization_placed.rpt -pb camera_wrapper_utilization_placed.pb
+INFO: [Vivado 12-24828] Executing command : report_io -file camera_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.140 . Memory (MB): peak = 1962.812 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file camera_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1962.812 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.480 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.596 . Memory (MB): peak = 1962.812 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.runs/impl_1/camera_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1962.812 ; gain = 0.000
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 0.223 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+93 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1962.812 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.454 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1962.812 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.571 . Memory (MB): peak = 1962.812 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.runs/impl_1/camera_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 80f85097 ConstDB: 0 ShapeSum: bf89a855 RouteDB: 15f972f0
+Post Restoration Checksum: NetGraph: 39061644 | NumContArr: c31268e9 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2816a7467
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2816a7467
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2816a7467
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1962.812 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 2e09110fd
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 1962.812 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.235  | TNS=0.000  | WHS=-0.274 | THS=-68.115|
+
+
+Phase 2.4 Update Timing for Bus Skew
+
+Phase 2.4.1 Update Timing
+Phase 2.4.1 Update Timing | Checksum: 22f0082d5
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:29 . Memory (MB): peak = 1962.812 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.235  | TNS=0.000  | WHS=-0.209 | THS=-0.735 |
+
+Phase 2.4 Update Timing for Bus Skew | Checksum: 2c6b68a0b
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 1962.812 ; gain = 0.000
+
+Phase 2.5 Soft Constraint Pins - Fast Budgeting
+Phase 2.5 Soft Constraint Pins - Fast Budgeting | Checksum: 2c6b68a0b
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 2001.438 ; gain = 38.625
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00201926 %
+  Global Horizontal Routing Utilization  = 0.00642326 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 9963
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 9963
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 235fe47e5
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 2001.438 ; gain = 38.625
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 235fe47e5
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:30 . Memory (MB): peak = 2001.438 ; gain = 38.625
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 2ed254bbb
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:33 . Memory (MB): peak = 2007.023 ; gain = 44.211
+Phase 4 Initial Routing | Checksum: 2ed254bbb
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:33 . Memory (MB): peak = 2007.023 ; gain = 44.211
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 909
+ Number of Nodes with overlaps = 202
+ Number of Nodes with overlaps = 66
+ Number of Nodes with overlaps = 29
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.227  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 2c08f71c0
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:42 . Memory (MB): peak = 2007.023 ; gain = 44.211
+Phase 5 Rip-up And Reroute | Checksum: 2c08f71c0
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:42 . Memory (MB): peak = 2007.023 ; gain = 44.211
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 25ecf0072
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:42 . Memory (MB): peak = 2007.023 ; gain = 44.211
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.333  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 6.1 Delay CleanUp | Checksum: 2b39423c5
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:42 . Memory (MB): peak = 2007.023 ; gain = 44.211
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 2b39423c5
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:42 . Memory (MB): peak = 2007.023 ; gain = 44.211
+Phase 6 Delay and Skew Optimization | Checksum: 2b39423c5
+
+Time (s): cpu = 00:00:54 ; elapsed = 00:00:42 . Memory (MB): peak = 2007.023 ; gain = 44.211
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.333  | TNS=0.000  | WHS=0.043  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 21fd98aa1
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:43 . Memory (MB): peak = 2007.023 ; gain = 44.211
+Phase 7 Post Hold Fix | Checksum: 21fd98aa1
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:43 . Memory (MB): peak = 2007.023 ; gain = 44.211
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.68013 %
+  Global Horizontal Routing Utilization  = 3.25085 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 21fd98aa1
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:43 . Memory (MB): peak = 2007.023 ; gain = 44.211
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 21fd98aa1
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:43 . Memory (MB): peak = 2007.023 ; gain = 44.211
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 258d169c2
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:44 . Memory (MB): peak = 2007.023 ; gain = 44.211
+
+Phase 11 Post Process Routing
+Phase 11 Post Process Routing | Checksum: 258d169c2
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:44 . Memory (MB): peak = 2007.023 ; gain = 44.211
+
+Phase 12 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.333  | TNS=0.000  | WHS=0.043  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 12 Post Router Timing | Checksum: 258d169c2
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:44 . Memory (MB): peak = 2007.023 ; gain = 44.211
+Total Elapsed time in route_design: 44.094 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: 1e0b12d34
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:44 . Memory (MB): peak = 2007.023 ; gain = 44.211
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 1e0b12d34
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:44 . Memory (MB): peak = 2007.023 ; gain = 44.211
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+106 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:57 ; elapsed = 00:00:44 . Memory (MB): peak = 2007.023 ; gain = 44.211
+INFO: [Vivado 12-24828] Executing command : report_drc -file camera_wrapper_drc_routed.rpt -pb camera_wrapper_drc_routed.pb -rpx camera_wrapper_drc_routed.rpx
+Command: report_drc -file camera_wrapper_drc_routed.rpt -pb camera_wrapper_drc_routed.pb -rpx camera_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.runs/impl_1/camera_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file camera_wrapper_methodology_drc_routed.rpt -pb camera_wrapper_methodology_drc_routed.pb -rpx camera_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file camera_wrapper_methodology_drc_routed.rpt -pb camera_wrapper_methodology_drc_routed.pb -rpx camera_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file D:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.runs/impl_1/camera_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -routable_nets -report_unconstrained -file camera_wrapper_timing_summary_routed.rpt -pb camera_wrapper_timing_summary_routed.pb -rpx camera_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file camera_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file camera_wrapper_route_status.rpt -pb camera_wrapper_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file camera_wrapper_power_routed.rpt -pb camera_wrapper_power_summary_routed.pb -rpx camera_wrapper_power_routed.rpx
+Command: report_power -file camera_wrapper_power_routed.rpt -pb camera_wrapper_power_summary_routed.pb -rpx camera_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+123 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file camera_wrapper_clock_utilization_routed.rpt
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file camera_wrapper_bus_skew_routed.rpt -pb camera_wrapper_bus_skew_routed.pb -rpx camera_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+generate_parallel_reports: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 2007.023 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2007.023 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2007.023 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 2007.023 ; gain = 0.000
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.147 . Memory (MB): peak = 2007.023 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.460 . Memory (MB): peak = 2007.023 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2007.023 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2007.023 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.691 . Memory (MB): peak = 2007.023 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/hearing_vision/test/build/work/hearing_vision_fpga.runs/impl_1/camera_wrapper_routed.dcp' has been generated.
+Command: write_bitstream -force camera_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Integrating Hard IP ELF/MEM with the PDI.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./camera_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+137 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:24 ; elapsed = 00:00:17 . Memory (MB): peak = 2399.168 ; gain = 392.145
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 15:28:04 2026...
+[Tue Nov  3 15:28:05 2026] impl_1 finished
+wait_on_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:03:34 . Memory (MB): peak = 551.824 ; gain = 0.000
+# if {![string match {*write_bitstream Complete*} [get_property STATUS [get_runs impl_1]]]} { error "Bitstream run did not complete" }
+# open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.111 . Memory (MB): peak = 820.664 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 912 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 934.043 ; gain = 3.504
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1537.844 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1537.844 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1537.844 ; gain = 0.000
+Read placeStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.314 . Memory (MB): peak = 1537.844 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1537.844 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.119 . Memory (MB): peak = 1539.066 ; gain = 1.223
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.482 . Memory (MB): peak = 1539.066 ; gain = 1.223
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.558 . Memory (MB): peak = 1539.066 ; gain = 4.215
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1542.816 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1542.930 ; gain = 991.105
+# file mkdir [file join $hv_root build reports]
+# file mkdir [file join $hv_root build artifacts]
+# report_utilization -file [file join $hv_root build reports utilization.rpt]
+# report_timing_summary -file [file join $hv_root build reports timing_summary.rpt]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+# report_drc -file [file join $hv_root build reports drc.rpt]
+Command: report_drc -file D:/FPGA/hearing_vision/test/build/reports/drc.rpt
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/FPGA/hearing_vision/test/build/reports/drc.rpt.
+report_drc completed successfully
+# write_hw_platform -fixed -include_bit -force -file [file join $hv_root build artifacts hearing_vision_fpga.xsa]
+INFO: [Projectvivado 1-1918] Creating Hardware Platform: D:/FPGA/hearing_vision/test/build/artifacts/hearing_vision_fpga.xsa ...
+INFO: [Projectvivado 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Projectvivado 1-1941] Successfully created Hardware Platform: D:/FPGA/hearing_vision/test/build/artifacts/hearing_vision_fpga.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (D:/vitis/2025.2/Vivado/data/embeddedsw) loading 5 seconds
+write_hw_platform: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1826.781 ; gain = 164.215
+# puts "XSA exported. Review reports, including unconstrained interfaces; then build Vitis and validate on board."
+XSA exported. Review reports, including unconstrained interfaces; then build Vitis and validate on board.
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 15:28:34 2026...
