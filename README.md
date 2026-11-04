@@ -14,7 +14,7 @@
 | board/ | BD、2 份 XDC、收图/采样工具、硬件照片及原工程配套 bit/XSA/ELF、PS 初始化脚本 |
 | data/ | 2 份运行权重、2 份历史能量采样 CSV |
 | skill/ | 已有 fpga-reproduce 技能包与工具测试 |
-| report/ | 设计报告 hearing_vision_report.pdf；大模型协作记录 ai_collaboration.md 与 ai_collaboration.pdf |
+| report/ | 设计报告 design_report.pdf；大模型协作记录 ai_collaboration.md 与 ai_collaboration.pdf |
 
 文件名使用英文和下划线/连字符；README.md、SKILL.md、LICENSE 保留工具与开源社区的常规命名。原开发工程、BSP、缓存、历史模型训练数据和大视频未包含。没有另外编造 HLS 或其他未实现的模块。
 
@@ -37,4 +37,4 @@
 
 在仓库根目录运行 `python -B sim/run_regression.py` 复跑现有三项 RTL 回归；需要 Python 3.10+、iverilog/vvp。具体本次结果见 [sim/results/validation.md](sim/results/validation.md)。回归通过不代表板端准确率、温升、机械行程或端到端耗时已验收。
 
-设计报告见 [hearing_vision_report.pdf](report/hearing_vision_report.pdf)。大模型协作记录见 [Markdown 版](report/ai_collaboration.md) 和 [PDF 版](report/ai_collaboration.pdf)。原创部分采用 [MIT](LICENSE)，第三方模型及其派生部分保留原作者授权，见 [模型授权说明](report/licenses/README.md)。
+设计报告见 [design_report.pdf](report/design_report.pdf)。大模型协作记录见 [Markdown 版](report/ai_collaboration.md) 和 [PDF 版](report/ai_collaboration.pdf)。原创部分采用 [MIT](LICENSE)，第三方模型及其派生部分保留原作者授权，见 [模型授权说明](report/licenses/README.md)。
