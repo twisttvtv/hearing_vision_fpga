@@ -1,10 +1,16 @@
 # 上板与现有材料
 
+当前发布使用原 integrate 工程配套的 [XSA](artifacts/hearing_vision_fpga.xsa)、[bit](artifacts/hearing_vision_fpga.bit)、[ELF](artifacts/integrate_app.elf) 和 [ps7_init.tcl](artifacts/ps7_init.tcl)。原 XSA 与 Vitis 平台副本一致，发布 bit 与原调试配置、XSA 内 bit 一致，初始化脚本从同一 XSA 提取。ELF 来自原调试配置所指向的应用构建目录，8 份发布 C/头文件与原应用源码相同。哈希见 [产物记录](../build/reports/artifacts.json)
+
 bd/camera.bd 保留当前板卡 PS/DDR/MIO、AXI 和外设连接；xdc/ 为已有两份引脚约束。photos/ 来自本地 media 的已有实物照片，不能单独作为最新源码准确率或上板成功的证据。尚未附有固件版本和场景标注的完整实测日志。
 
-## Vitis 2025.2
+## 使用现有上板文件
 
-1. 从重新生成且含 bit 的 XSA 新建 standalone / ps7_cortexa9_0 平台，再建空 C 应用。
+使用 artifacts/ 下的 bit、ps7_init.tcl 与 integrate_app.elf，按原 Vitis 调试配置完成 FPGA 配置、PS 初始化和应用下载。在 model_camera_wait() 断点处，从该 ELF 的符号或启动日志读取权重与 ready 地址，按下文加载 data/weights/ 两份权重后继续运行。若修改硬件或软件源码，再使用对应 XSA 按以下步骤重建平台和应用。
+
+## Vitis 2025.2 软件重建
+
+1. 从 artifacts/hearing_vision_fpga.xsa 新建 standalone / ps7_cortexa9_0 平台，再建空 C 应用；若自行修改并重建硬件，则使用自己新导出的匹配 XSA。
 2. 加入 src/ps 的 4 个 C 和 4 个头文件，移除额外模板 main。程序入口 model_camera_live.c。
 3. 编译采用 -O3、-ffp-contract=off；宏 MODEL_CAMERA_PREVIEW=1、MODEL_LIVE_SEND_ALL=1、MODEL_CAMERA_VISUAL_ONLY=0；链接数学库 m，浮点 ABI 与 BSP 一致。历史工程还使用 -g3 和取消定义 __clang__，按工具链核对。
 4. 使用 Vitis 生成链接脚本，将程序、BSS、权重缓存及工作区放入实际可用 DDR，建议至少预留 64 MiB。主栈/堆参考均为 0x2000；不要直接套用历史 1 GiB DDR 链接区域到较小内存板卡。
@@ -16,6 +22,6 @@ bd/camera.bd 保留当前板卡 PS/DDR/MIO、AXI 和外设连接；xdc/ 为已�
 
 电脑收图使用 tools/model_receive.py，921600 波特率。PS 日志串口与测试图像串口不同。flags=2 是无分数测试图，不等于推理成功；软件只接收板端结果。
 
-mic_energy_test.tcl 是现有 XSDB 采样工具。加载本次新 6000、2 倍噪声启动配置后，先在 XSDB source 此脚本，再调用 mic_energy_test quiet 6000 2 或 mic_energy_test speech 6000 2；未加载新硬件时不要用推算门限冒充实际参数。脚本输出 CSV 到当前工作目录，归档时放入 data/samples 并补充场景和版本。
+mic_energy_test.tcl 是现有 XSDB 采样工具。使用 VAD 启动绝对门限为 6000、噪声倍率为 2 的配套固件时，先在 XSDB source 此脚本，再调用 mic_energy_test quiet 6000 2 或 mic_energy_test speech 6000 2；未加载新硬件时不要用推算门限冒充实际参数。脚本输出 CSV 到当前工作目录，归档时放入 data/samples 并补充场景和版本。
 
 舵机物理行程/温升、实物 VAD 与视觉准确率、耗时仍待验收；历史说明已有发热记录。J3 水平舵机，J5 信号保持低；真实接线以 XDC 和实物板卡为准。
