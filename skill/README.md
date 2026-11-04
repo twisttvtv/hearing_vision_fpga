@@ -23,7 +23,9 @@ python skill/fpga-reproduce/scripts/run_regression.py --root "工程根目录的
 
 --root 是仿真的工作目录，可包含仿真读取的数据文件。--rtl-dir 读取指定目录直接包含的 .v 文件，不递归搜索；未指定时才默认读取工程根目录下的 rtl/。--tb 可以重复指定多个文件。testbench 必须在检查成功时打印以 PASS 开头的行，失败时打印 FAIL/FATAL/ERROR 或以非零退出码结束。
 
-本包还保留原案例的三项回归作为默认模式：只有使用包含 tests/model_camera_vad_tb.v、tests/model_camera_servo_direction_tb.v、tests/model_camera_alert_policy_tb.v 的案例工程时，才可省略 --top 和 --tb。新题目应明确指定自己的 testbench。
+当前发布案例的三份 testbench 位于 sim/tb/；在仓库根目录运行 `python -B sim/run_regression.py`，该入口已明确指定 src/rtl 和 sim/tb。直接调用底层通用脚本时，应显式传入 --rtl-dir、--top 和 --tb。
+
+底层脚本还保留原案例的三项回归作为默认模式：只有使用包含 tests/model_camera_vad_tb.v、tests/model_camera_servo_direction_tb.v、tests/model_camera_alert_policy_tb.v 的案例工程时，才可省略 --top 和 --tb。新题目应明确指定自己的 testbench。
 
 ### 2. 比较自己的构建产物
 

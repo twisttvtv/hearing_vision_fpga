@@ -12,4 +12,6 @@
 
 实际执行 `python -B -m unittest discover -s skill/tests -v`，9 项测试全部通过，无跳过，退出码 0；包含临时改名目录下真实 RTL 仿真及 bit/XSA 文件检查的成功/失败路径。测试用的 bit/XSA 是合成样本，不是本工程的新硬件结果。
 
-上述为 RTL 仿真和工具测试记录。另已在独立测试副本中完成 Vivado 工程创建、综合、实现和 bit/XSA 导出，见 ../../build/reports/validation.md。尚未重建 Vitis 应用或上板，未测量准确率、延迟、行程和温升。以上不代表最新源码已加载到实物。
+上述为 RTL 仿真和工具测试记录。另已在独立测试副本中完成 Vivado 工程创建、综合、实现和 bit/XSA 导出，见 [独立构建验证记录](../../build/reports/validation.md)。
+
+当前发布已提供原 integrate 工程配套的 XSA、bit、ELF 和 PS 初始化脚本，位于 board/artifacts/，哈希见 [产物记录](../../build/reports/artifacts.json)。使用这套现有文件无需先重建 ELF。上述仿真、工具测试及独立构建不包含板卡下载或准确率、延迟、行程和温升的实测验收。

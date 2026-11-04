@@ -1,7 +1,7 @@
 # 验证记录
 
-以下为原作者的历史验证记录，出现的本机目录名只用于追溯当时输入，不是使用要求。其他人应按 README 指定自己的实际路径。未烧写硬件、未构建新 bit/XSA。
-## 本次实际执行
+本文件记录技能脚本和三项 RTL 回归的历史验证。当前发布选择原 integrate 工程的 XSA、bit、ELF 和 PS 初始化脚本，位于 board/artifacts/，哈希见 [产物记录](../build/reports/artifacts.json)。下文 57acbde1 开头的 bit 哈希也对应当前发布的原工程 bit。另一次独立 Vivado 重建的哈希与结果保留在 artifacts.json 的 rebuild_validation 中，详见 [构建验证记录](../build/reports/validation.md)。本次整理沿用原 ELF，未重新编译或连接板卡。
+## 历史技能与回归验证
 
 | 检查 | 结果 | 证明范围 |
 |---|---|---|
@@ -14,7 +14,7 @@
 
 运行环境：Windows PowerShell；Python 3；Icarus Verilog/vvp 0.9.7。本机旧 Icarus 不支持 -g2012，脚本已使用本案例所需的 -g2005。其他项目若依赖 SystemVerilog 或厂商 IP，需自行更换编译选项与仿真工具。
 
-三份 bit 的 SHA-256：
+历史核对的三份原 integrate bit 的 SHA-256（与当前发布 bit 一致）：
 
 ```text
 57acbde1c40dded1ebb245b8dd4a850de104ee30fba8c45ee100d14bef23d4f3
@@ -38,11 +38,13 @@
 
 ## 复跑
 
+仓库根目录的现有案例入口为 `python -B sim/run_regression.py`；该入口已明确指定 src/rtl 和 sim/tb。
+
 按 README 使用自己的实际工程路径、RTL 目录、testbench 和构建产物。工具行为测试只需 Python 标准库；RTL 回归另需 iverilog/vvp。复跑原案例还需要原案例源码和三份 testbench，但不要求它们所在的工程文件夹叫特定名字。默认案例回归不适用于任意新题目。
 
 ## 未验证与参赛边界
 
-- 没有重新综合/实现，未声明最新 RTL 与现有 bit 一致；原案例文档中待重建、待上板的配置仍需实际完成。
+- 上述历史技能验证与后续独立 Vivado 构建的结果分别记录。当前发布已附原 integrate 工程配套的 XSA、bit、ELF 和 PS 初始化脚本，使用这套现有文件无需先重建 ELF；修改硬件或软件源码后再重建对应平台和应用。
 - 没有读取实物寄存器、测量机械行程/温升、现场 VAD/模型准确率或端到端耗时。
 - 提示词与排错表从工程材料提炼，尚无陌生团队的独立复用试验。
-- 根目录许可证、第三方许可、完整构建脚本、设计报告与真实协作/上板证据仍由项目提交者整理。
+- 许可证、第三方许可、构建脚本、协作记录和设计报告已在仓库中。上述独立构建不包含板卡下载，相关测试记录不能替代当前发布配套固件的完整实物验收。
